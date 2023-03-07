@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My favourites</title>
+    <link rel="stylesheet" href="./favourites.css" />
+    <link rel="stylesheet" href="../navbar_styles/navbar.css" />
+    <script
+      src="https://kit.fontawesome.com/5fc882c95a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <div onclick="window.location.href='../index.html'">
+        <img
+          src="https://logos-world.net/wp-content/uploads/2022/05/Trivago-Logo-700x394.png"
+          alt=""
+        />
+      </div>
+
+      <div id="navlist">
+        <a href="" style="color: #007cc2; border-bottom: 3px solid#007cc2">
+          <i class="fa-regular fa-heart" style="font-size: 23px; opacity: 80%">
+          </i>
+          &nbsp; My favourites
+        </a>
+        <a href=""> Log in </a>
+        <a> Menu &nbsp; <i class="fa-solid fa-chevron-down"></i> </a>
+        <a> INR &nbsp; <i class="fa-solid fa-chevron-down"></i> </a>
+      </div>
+    </div>
+
+    <div id="top">
+      <h1>My favourites</h1>
+      <p id="stayy">0 stays</p>
+      <p style="margin-top: 25px">
+        Click the heart icon next to a stay's name and it will be saved here
+      </p>
+      <img
+        src="https://imgcy.trivago.com/image/upload/v1655727086/hardcodedimages/favorites/empty-favorites.svg"
+        alt=""
+      />
+      <p>Ready to browse and favourite stays?</p>
+      <button
+        style="cursor: pointer"
+        onclick="window.location.href='search.html'"
+      >
+        Explore stays
+      </button>
+    </div>
+
+    <div id="activity">
+      <p>Your recent activity</p>
+
+      <div id="items"></div>
+    </div>
+  </body>
+
+  <script src="./favourite.js"></script>
+</html>
