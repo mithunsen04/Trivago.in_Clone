@@ -1,0 +1,55 @@
+
+
+* {
+    font-family: system-ui;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ************************navbar************************* */
+#navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    border-bottom: 1px solid rgb(202, 200, 200);
+    height: 70px;
+    z-index: 1;
+    background-color: white;
+}
+
+#navbar div {
+    width: 50%;
+}
+
+#navbar div img {
+    width: 125px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    padding-left: 30px;
+}
+
+#navlist {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navlist a {
+    text-decoration: none;
+    color: black;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 25px;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+#navlist a:hover {
+    background-color: rgb(243, 243, 243);
+}
