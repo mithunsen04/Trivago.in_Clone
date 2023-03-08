@@ -169,3 +169,56 @@ body {
     margin-top: -15px;
     cursor: pointer;
 }
+
+
+.km,
+.ratelogo1,
+.pdiv,
+.ldiv {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ratelogo1,
+.km {
+    justify-content: space-between;
+    margin-top: -18px;
+    cursor: pointer;
+}
+
+.book {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    background-color: #168a14;
+    border: none;
+    border-radius: 10px;
+    width: 130px;
+    cursor: pointer;
+}
+
+.pricediv {
+    background-color: #f1f8ea;
+    padding: 5px;
+    border-radius: 5px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.km {
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.detail {
+    width: 48%;
+}
