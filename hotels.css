@@ -222,3 +222,21 @@ body {
 .detail {
     width: 48%;
 }
+
+
+.div1,
+.div2 {
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hr {
+    height: 0.3px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #e2dfdf inset;
+}
+
+/* ***********************hover********************** */
