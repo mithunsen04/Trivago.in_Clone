@@ -282,3 +282,724 @@ body {
 .ig:hover+.text {
     display: block;
 }
+
+
+/* ***********************************footer************************************** */
+
+footer {
+    background: rgb(10, 17, 33);
+    color: white;
+    margin-top: 70px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+}
+
+footer hr {
+    width: 100%;
+    margin: auto;
+    border-color: rgb(108, 112, 122);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+footer {
+    font-family: Arial, Helvetica, Sans-Serif;
+    padding: 30px 20px;
+}
+
+.parent_footer {
+    width: 85%;
+    margin: auto;
+}
+
+.above_hr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.above_hr p {
+    font-size: 14px;
+}
+
+.mail_info {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.mail_info input {
+    height: 30px;
+    width: 79%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.mail_info button {
+    background: rgb(108, 112, 122);
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    height: 45px;
+    width: 120px;
+
+
+}
+
+.mail_info button:hover {
+    cursor: pointer;
+    background: rgb(175, 179, 188);
+}
+
+.below_hr p {
+    font-size: 14px;
+}
+
+.footer_logos {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.below_hr {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.country_parent {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.country_parent>div {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#country {
+    width: 100%;
+    background: rgb(10, 17, 33);
+    color: white;
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+#country:focus {
+    border: none;
+}
+
+.below_logos {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.below_logos a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.below_logos a:hover {
+    text-decoration: underline;
+}
+
+.list_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list_3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_logos svg:hover {
+    cursor: pointer;
+}
+
+.footer_logos svg {
+    fill: white;
+}
+
+.footer_last_div {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyRightText {
+    color: rgb(175, 179, 188);
+    font-size: 12px;
+}
+
+/* ***************************price range**************************** */
+
+.range_container {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    margin: 5px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.05) 2px 0px 0px 0px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+.sliders_control {
+    position: relative;
+    min-height: 50px;
+}
+
+.form_control {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.form_control>div {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #C6C6C6;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    -moz-webkit-appearance: none;
+    pointer-events: all;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #C6C6C6;
+    cursor: pointer;
+}
+
+*/ input[type=range]::-webkit-slider-thumb:hover {
+    background: #f7f7f7;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+    box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+    -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+}
+
+input[type="number"] {
+    color: #8a8383;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background-color: #C6C6C6;
+    pointer-events: none;
+}
+
+#fromSlider {
+    height: 0;
+    z-index: 1;
+}
+
+.form_control_container {
+    display: none;
+}
+
+.time_input,
+.time_inpu {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#sorting {
+    display: flex;
+    justify-content: center;
+}
+
+/* ********************************property************************* */
+#property_child {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    width: 290px;
+    padding: 3px;
+    border-radius: 0.8rem;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: space-around;
+    margin-top: 5px;
+
+}
+
+#property_child>div{
+    padding: 5px;
+}
+
+#all,
+#hotel,
+#house {
+    align-items: center;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#property_main>div:first-child {
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: left;
+    margin-top: 5px;
+}
+
+#property_main {
+    box-shadow: rgba(0, 0, 0, 0.05) 2px 0px 0px 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#guest,
+#location {
+    width: 122px;
+    box-shadow: rgba(0, 0, 0, 0.05) 2px 0px 0px 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#more {
+    width: 122px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.rate {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.r {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#guest,
+#location,
+#more {
+    margin-top: 5px;
+}
+
+/* *******************************search********************************** */
+.x_inSearch {
+    width: 20px;
+    height: 20px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.functional_div {
+    width: 99%;
+   margin-top: 3%;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.typeOfHotel_buttons {
+    width: 74%;
+    margin: auto;
+}
+
+.typeOfHotel_buttons>button {
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    background: rgb(231, 244, 250);
+    border: none;
+}
+
+.complex_div {
+    padding: 5px;
+    width: 68%;
+   gap: 10px;
+   margin: auto;
+    display: flex;
+    border-radius: 0 10px 10px 10px;
+  align-items: center;
+}
+
+.left_arrow{
+    transform: rotate(180deg);
+}
+
+.part2_1{
+   
+    box-shadow: rgba(0, 0, 0, 0.05) 2px 0px 0px 0px;
+}
+.part1 {
+    display: flex;
+    width: 100%;
+    flex: 3;
+    align-items: center;
+    padding: 0 15px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+.calen1,.calen2{
+    display: none;
+}
+.part1 input {
+    width: 100%;
+    padding: 10px;
+   height: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.part1 button {
+    background: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.part1 button:hover {
+    background: rgb(243, 244, 245);
+}
+
+.part2 {
+    display: flex;
+    flex: 3;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.part3 {
+    display: flex;
+    flex: 1.2;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: white;
+}
+
+.part4 {
+    display: flex;
+    flex: 2;
+}
+
+.part4_submit {
+    width: 70%;
+    background: rgb(0, 124, 194);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 13px 5px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.part4_submit:hover {
+    background: rgb(0, 95, 163);
+    cursor: pointer;
+}
+
+.imageOfCompanies {
+    width: 73%;
+    margin: auto;
+}
+
+.screenShotImg {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text_100 {
+    font-size: 14px;
+    color: rgb(175, 179, 188);
+}
+
+.part3 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.part3 p:nth-child(1) {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.part3 p:nth-child(2) {
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.resetBtn {
+    width: 25%;
+    height: 40px;
+    border-color: rgb(181, 183, 188);
+    background: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.resetBtn:hover {
+    background-color: rgb(108, 112, 122);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.applyBtn {
+    width: 25%;
+    height: 35px;
+    background: rgb(0, 124, 194);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.applyBtn:hover {
+    background: rgb(0, 95, 163);
+    cursor: pointer;
+}
+
+.guestInfoDiv p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.guestInfoDiv p:nth-last-child(1) {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.guestInfoDiv {
+    display: none;
+}
+
+
+.input_adults {
+    width: 20%;
+    border: 1px solid rgb(215, 217, 221);
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+}
+
+.input_childrens {
+    width: 20%;
+    border: 1px solid rgb(215, 217, 221);
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+
+}
+
+.input_rooms {
+    width: 20%;
+    border: 1px solid rgb(215, 217, 221);
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+
+}
+
+.inc_adults {
+    width: 18%;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 1px solid rgb(125, 129, 138);
+    background: white;
+}
+
+.inc_childrens {
+    width: 18%;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 1px solid rgb(125, 129, 138);
+    background: white;
+
+}
+
+.inc_rooms {
+    width: 18%;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 1px solid rgb(125, 129, 138);
+    background: white;
+
+}
+
+.dec_adults {
+    width: 18%;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 1px solid rgb(125, 129, 138);
+    background: white;
+
+}
+
+.dec_childrens {
+    width: 18%;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 1px solid rgb(125, 129, 138);
+    background: white;
+
+}
+
+.dec_rooms {
+    width: 18%;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 1px solid rgb(125, 129, 138);
+    background: white;
+}
+#search_bar{
+    width: 100%;
+}
+
+/* *********************calender******************* */
+
+
+
+
+
+
+
+#guest{
+    cursor: pointer;
+}
+
+
+
+.guest_ghost{
+display: none;
+width: 15%;
+position: absolute;
+top: 35%;
+left: 56%;
+background: white;
+z-index: 200;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+border-radius: 10px;
+}
+.guest_ghost>div:nth-child(1):hover{
+    background: #f3f4f5;
+}
+.guest_ghost>div:nth-child(2):hover{
+    background: #f3f4f5;
+}
+.guest_ghost>div:nth-child(3):hover{
+    background: #f3f4f5;
+}
+.guest_ghost>div:nth-child(4):hover{
+background: #f3f4f5;
+}
+.rating_1{
+    background: rgb(0,95,0);
+    border-radius: 6px;
+    color: white;
+    padding: 3px 3px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.rating_2{
+    background: #028000;
+    border-radius: 6px;
+    color: white;
+    padding: 3px 3px;
+    font-weight: bold;
+    font-size: 12px;
+
+
+}
+.rating_3{
+    background: #62a30f;
+    border-radius: 6px;
+    color: white;
+    padding: 3px 3px;
+    font-weight: bold;
+    font-size: 12px;
+
+
+}
+.rating_4{
+    background: #fc9e15;
+    border-radius: 6px;
+    color: white;
+    padding: 3px 3px;
+    font-weight: bold;
+    font-size: 12px;
+
+
+}
+.guest_ghost > div{
+    display: flex;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 0px 0px;
+    
+}
+
+.guest_ghost > div>span{
+    margin-left: 20px;
+}
