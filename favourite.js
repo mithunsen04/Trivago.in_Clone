@@ -31,7 +31,7 @@ function display(arr) {
     make.setAttribute("class", "book");
     make.innerHTML = "Book Now " + `&nbsp` + ">";
     make.addEventListener("click", function () {
-      window.location.href = "Booking.html";
+      window.location.href = "booking.html";
     });
     div.append(banner, textsDiv, make);
     container.append(div);

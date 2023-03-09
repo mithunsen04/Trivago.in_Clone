@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <link rel="stylesheet" href="./booking.css" />
+    <link rel="stylesheet" href="../navbar_styles/navbar.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeXTVDu67JZDJNNRO9MhA7OBpUHYgEC54aw&usqp=CAU"
+    />
+    <script
+      src="https://kit.fontawesome.com/5fc882c95a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeXTVDu67JZDJNNRO9MhA7OBpUHYgEC54aw&usqp=CAU"
+    />
+  </head>
+  <body>
+    <div id="navbar">
+      <div onclick="window.open('../index.html')">
+        <img
+          src="https://logos-world.net/wp-content/uploads/2022/05/Trivago-Logo-700x394.png"
+          alt=""
+        />
+      </div>
+
+      <div id="navlist">
+        <a href="../favourites/favourites.html">
+          <i class="fa-regular fa-heart" style="font-size: 23px; opacity: 80%">
+          </i>
+          &nbsp; My favourites
+        </a>
+        <a href=""> Log in </a>
+        <a> Menu &nbsp; <i class="fa-solid fa-chevron-down"></i> </a>
+        <a> INR &nbsp; <i class="fa-solid fa-chevron-down"></i> </a>
+      </div>
+    </div>
+
+    <div id="main">
+      <div id="hotelDetails">
+        <div id="head"></div>
+
+        <div id="center">
+          <h2 id="name"></h2>
+          <p id="desc" style="opacity: 80%"></p>
+          <div>
+            <div id="rating"></div>
+            <div id="all"></div>
+          </div>
+          <p><span id="night"> </span> Night</p>
+        </div>
+
+        <div id="bottom">
+          <div id="duration">
+            <h4 id="fromTo"></h4>
+            <h4 style="font-weight: lighter" id="userPref">1 Room, 2 Guests</h4>
+          </div>
+
+          <p><i class="fa-solid fa-door-open"></i> Classic</p>
+
+          <div id="prices">
+            <p id="roomPrice">Room price for 1 Night X 2 Guests</p>
+            <p id="price1">₹960</p>
+            <p>Discount 5%(New user)</p>
+            <p id="discount">-250</p>
+            <p>Coupon Code:</p>
+
+            <p id="coupon">-100</p>
+          </div>
+
+          <div id="lastbill">
+            <div>
+              <h3 style="line-height: 0px">Payable Amount</h3>
+              <h5 style="font-weight: lighter">inclusive of all taxes</h5>
+            </div>
+            <div><h2 id="total">₹500</h2></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="customerDetails">
+        <div>
+          <div id="heading">
+            <div><span id="numdec"> 1 </span> Enter your details</div>
+          </div>
+
+          <div id="ext">
+            <div id="user_details">
+              <p>
+                We will use these details to share your booking information.
+                Hence confirm the below details.
+              </p>
+              <div id="primary">
+                <div>
+                  <label for=""> Phone Number </label>
+                  <input
+                    type="number"
+                    placeholder="Enter your phone no."
+                    id="userPhone"
+                  />
+                </div>
+
+                <div id="emailVerify">
+                  <label for=""> Email Address </label>
+                  <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    id="userEmail"
+                  />
+                  <br />
+                  <input type="submit" value="Send OTP" id="otpButton" />
+                </div>
+
+                <div id="otp">
+                  <label for=""> Enter OTP </label>
+                  <input
+                    type="number"
+                    placeholder="Enter your OTP"
+                    id="otpValue"
+                  />
+                  <br />
+                  <input type="submit" value="Verify" id="otpVerify" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 20px" id="paymentDetails">
+          <div id="heading" style="border-radius: 0px">
+            <div>
+              <span id="numdec"> 2 </span> Payment &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            </div>
+          </div>
+
+          <div id="paymentOptions">
+            <div class="setBlue" id="opt1"><h4>Pay at Hotel</h4></div>
+            <div class="setSmoke" id="opt2"><h4>Pay Now</h4></div>
+          </div>
+
+          <div id="pay" style="cursor: pointer"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="./booking.js"></script>
+
+  <script>
+    async function otpRequest(OTP, email) {
+      let status = 0;
+      try {
+        let response = await Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "trivago.verify45@gmail.com",
+          Password: "BA3EA10909EC1121A81021DF4632399BE5CB",
+          To: email,
+          From: "trivago.verify45@gmail.com",
+          Subject: "Email varifivation",
+          Body:
+            "Your OTP is " + OTP + ". Please use this OTP to verify your Email",
+        });
+
+        if (response == "OK") {
+          status = 200;
+        } else {
+          status = 404;
+        }
+      } catch (error) {
+        console.log(error);
+        status = 404;
+      }
+
+      return status;
+    }
+  </script>
+</html>
