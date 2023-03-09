@@ -1,0 +1,271 @@
+* {
+    font-family: "Proxima Vara", Arial, Arial, Helvetica, sans-serif;
+  }
+
+#parent {
+    display: flex;
+    margin-top: 6%;
+    justify-content: center;
+
+}
+
+#sidebar {
+    /* border: 1px solid red; */
+    margin-top: -3%;
+    width: 12%;
+    margin-right: 5%;
+    margin-left: -3%;
+
+}
+
+.backicon {
+    position: relative;
+    top: 42px;
+    color: #3398f1;
+}
+
+#sidebar>div {
+    padding: 8%;
+}
+
+#sidebar>div>a {
+    color: #4f6a7e;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    word-spacing: 0.1em;
+}
+
+/* #sidebar>div>a:active{
+    color: red;
+ }  */
+#sidebar>div>a:hover {
+    text-decoration-line: underline;
+}
+#accountSettingsdiv{
+    display: flex;
+    gap: 10px;
+}
+
+hr.style11 {
+    height: 2px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #e2dfdf inset;
+}
+
+
+
+#mainbar {
+    width: 39%;
+    height: max-content;
+    margin-left: -2%;
+    margin-top: -3%;
+    margin-right: 2%;
+}
+
+#mainbar>h1 {
+    font-size: 40px;
+
+}
+
+h3 {
+    font-weight: 400;
+    padding: 1.5% 3% 0% 0%;
+}
+
+label {
+    padding-top: 1%;
+    color: black;
+    font-weight: 500;
+}
+
+input[type=text],
+[type=password] {
+    height: 48px;
+    width: 123%;
+    padding: 18px;
+    margin: 8px 0;
+    outline: 0;
+    display: inline-block;
+    border: 2px solid #c7cad0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 450;
+}
+
+input:focus {
+    border: 2px dotted #ccc;
+}
+
+.eyeicon {
+    position: absolute;
+    top: 810px;
+    right: 498px;
+
+}
+
+hr.style13 {
+    height: 0.3px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #e2dfdf inset;
+}
+
+
+section {
+    align-items: center;
+}
+
+#bd {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.8%;
+    margin-top: -1.5%;
+}
+
+#del {
+    border: none;
+    background-color: white;
+    color: #bdbcc1;
+    cursor: pointer;
+    margin-right: -30%;
+    font-size: 15px;
+}
+
+#del:hover {
+    text-decoration-line: underline;
+}
+
+#update {
+    padding: 16px;
+    border-radius: 9px;
+    background-color: #0b7fc3;
+    border: none;
+    color: white;
+    margin-left: -7%;
+    width: 225px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#updateinformation {
+    padding: 16px;
+    border-radius: 9px;
+    background-color: #0b7fc3;
+    border: none;
+    color: white;
+    margin-left: -4%;
+    width: 60%;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#hrd {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+hr.style14 {
+    height: 3px;
+    width: 220px;
+    color: #dedde4;
+    background-color: #dedde4;
+    border: 1px solid #dedde4;
+    border-radius: 30px;
+}
+
+li {
+    color: #bdbcc1;
+}
+
+.pr {
+    margin-top: -2%;
+}
+
+.li1 {
+    display: flex;
+    justify-content: space-between;
+    color: #bdbcc1;
+    margin-top: -1%;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: -2.5%;
+}
+
+.li2 {
+    display: flex;
+    justify-content: space-between;
+    color: #bdbcc1;
+    margin-top: -4%;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: -2.5%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #sidebar {
+        display: none;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    .style14 {
+        display: none;
+    }
+
+    #mainbar {
+        margin-top: -10%;
+        width: 90%;
+    }
+
+    .eyeicon {
+        position: absolute;
+        top: 660px;
+        right: 90px;
+
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    .style14 {
+        display: none;
+    }
+
+    #mainbar {
+        margin-top: -10%;
+        width: 90%;
+    }
+
+    .eyeicon {
+        position: absolute;
+        top: 650px;
+        right: 60px;
+
+    }
+
+    #update {
+        border-radius: 0px;
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    #updateinformation {
+        border-radius: 0px;
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+}

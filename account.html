@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+    <link rel="stylesheet" href="styles/account.css">
+    <script src="https://kit.fontawesome.com/d042af9a63.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5fc882c95a.js" crossorigin="anonymous"> </script>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeXTVDu67JZDJNNRO9MhA7OBpUHYgEC54aw&usqp=CAU">
+</head>
+
+<body>
+   
+    <div id="parent">
+        <div id="sidebar">
+            <!-- <i class="fa-solid fa-chevron-left backicon"></i> -->
+            <div style="margin-bottom: -8%;"><a  style="color: #3398f1;" href="" > &#60;Back</a></div>
+           
+            <div id="accountSettingsdiv"> <div id="pagevisit"></div><a id="accountSettings" href="account.html">Account Settings </a></div>
+         
+            <div id="accountSettingsdiv1" ><div id="pagevisit1"></div><a id="recetsettings" href="recently.html">Recently viewed</a></div>
+            <div id="accountSettingsdiv2"> <div id="pagevisit2"></div><a id="helpsettings" href="help.html">Help and support</a></div>
+            <hr class="style11">
+            <div> <a style="color: black" href="">Log out</a></div>
+        </div>
+        <div id="mainbar">
+            <h1>Account Settings</h1>
+            <form action="" id="personalInformation">
+                <section >
+                    <h3>Personal Information</h3>
+                    <label for="">First name</label>
+                    <br>
+                    <input type="text" placeholder="e.g. john" id="fname" required minlength="4">
+                    <br>
+                    <label for="">Last name</label>
+                    <br>
+                    <input type="text" placeholder="e.g. Smith" id="lname" required minlength="4"> 
+                    <br>
+                    <div id="bd">
+                        <!-- <input type="submit" value="submit"> -->
+                        <button id="updateinformation" onclick="upinfo()"> Update Personal Information</button>
+                        <button id="del">Delete my account</button>
+                    </div>
+                    <hr class="style13">
+                </section>
+            </form>
+            <form action="" id="Passwordinformation">
+                <section>
+                    <div>
+                        <h3>Change Your Password</h3>
+                        <label for="">Old password</label>
+                        <br>
+                        <input  type="password" id="oldpass">
+                        <br>
+                        <label for="">New password </label>
+                        <br>
+                        <div id="lastpassword">
+                            <input class="newly" id="newpass" type="password" oninput="countcharcter()"/>
+                            
+                        </div>
+    
+                        <br>
+                        <div id="hrd">
+                            <div>
+                                <hr class="style14">
+                            </div>
+                            <div>
+                                <hr class="style14">
+                            </div>
+                            <div>
+                                <hr class="style14">
+                            </div>
+                        </div>
+                        <div class="pr">
+                            <h3>Password requirements</h3>
+                        </div>
+    
+                        <ul>
+                            <div class="li1">
+                                <li>Has minimum 10 characters.</li>
+                                <p><span id="count">0</span>/10</p>
+                            </div>
+                            <div class="li2">
+                                <li>Contains at least 1 upper case character.</li>
+                                <p><span id="upper">0</span>/1</p>
+                            </div>
+                            <button id="update" onclick="uppass()"> Change your password</button>
+                        </ul>
+                    </div>
+                </section>
+    
+            </form>
+            
+           
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="scripts/account.js"></script>
