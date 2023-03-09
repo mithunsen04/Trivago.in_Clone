@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account - Trivago</title>
+    <link rel="stylesheet" href="styles/create.css">
+</head>
+<body>
+    <div id="container">
+        <div id="logo">
+          <img
+            src="https://auth.trivago.com/_static/icons/logo.svg"
+            alt="trivago logo"
+          />
+        </div>
+        <div id="main">
+          <h1>
+            Create a password for your new account
+          </h1>
+  
+          <!-- form for enter password -->
+  
+          <form id="loginForm" onsubmit="handleCreateAccount(event)">    
+            <label
+              data-testid="password-input-label"
+              for="email"
+              class="BaseInput_label__SGD71"
+              >Password</label
+            >
+  
+            <input
+              class="pw"
+              id="password"
+              type="password"
+              name="password
+              aria-invalid="false"
+              autocomplete="current-password"
+              autocapitalize="none"
+              spellcheck="false"
+            />
+           
+            <button type="submit" id="create" onclick="submitdata()">Create account</button>
+          </form>
+  
+        </div>
+</body>
+</html>
+
+<script src="scripts/create.js"></script>

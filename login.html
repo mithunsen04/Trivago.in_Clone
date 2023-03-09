@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login or create an account - Trivago</title>
     <link rel="stylesheet" href="styles/login.css"/>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeXTVDu67JZDJNNRO9MhA7OBpUHYgEC54aw&usqp=CAU">
   </head>
   <body>
     <div id="container">
@@ -23,7 +24,7 @@
 
         <!-- form for login email -->
 
-        <form id="form">    
+        <form id="loginForm"  onsubmit="handleLogin(event)">    
           <label
             data-testid="email-input-label"
             for="email"
@@ -42,7 +43,7 @@
             spellcheck="false"
           />
          
-          <button type="submit" id="goNext">Next</button>
+          <button type="submit" id="goNext" onclick="submitdata()">Next</button>
         </form>
 
         <div class="or">OR</div>
@@ -71,4 +72,7 @@
     </div>
   </body>
 </html>
+
+<script src="scripts/login.js"></script>
+
 

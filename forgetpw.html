@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget password - Trivago</title>
+    <link rel="stylesheet" href="styles/forgetpw.css">
+</head>
+<body>
+    <div id="container">
+        <div id="logo">
+          <img
+            src="https://auth.trivago.com/_static/icons/logo.svg"
+            alt="trivago logo"
+          />
+        </div>
+        <div id="main">
+          <h1>
+            Forgot your <br> password? <br>          
+            No problem!
+          </h1>
+
+          <p>Enter your email address and we will send you a link for the password reset.</p>
+
+          <!-- form for enter password -->
+  
+          <form id="loginForm"  onsubmit="handlepassword(event)">    
+            <label
+              data-testid="password-input-label"
+              for="email"
+              class="BaseInput_label__SGD71"
+              >Your email address</label
+            >
+  
+            <input
+              class="pw"
+              id="password"
+              type="email"
+              name="email
+              aria-invalid = "false"
+              autocomplete="current-password"
+              autocapitalize="none"
+              spellcheck="false"
+            />
+           <a href="email.html">
+            <button > <a href="email.html">Send reset link</a> </button>
+          </form></a>
+  
+        </div>
+</body>
+</html>
+
+<script src="scripts/forgetpw.js"></script>
