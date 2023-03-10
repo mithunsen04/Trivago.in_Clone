@@ -1,0 +1,513 @@
+* {
+  font-family: "Proxima Vara, Arial, Arial, Helvetica, sans-serif";
+  letter-spacing: 2px;
+}
+header {
+  width: 100%;
+}
+main {
+  width: 100%;
+}
+footer {
+  width: 100%;
+  /* border: 40px solid rgb(161, 88, 100); */
+}
+nav div {
+  display: flex;
+}
+nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid rgba(219, 221, 225);
+}
+nav > div {
+  width: 32%;
+}
+nav > div > div {
+  justify-content: center;
+  align-items: center;
+}
+.parent_nav > div div {
+  padding: 5px;
+}
+nav > div > div:nth-child(1) {
+  flex: 1;
+}
+nav > div > div:nth-child(2) {
+  flex: 0.6;
+}
+nav > div > div:nth-child(3) {
+  flex: 0.8;
+}
+nav > div > div:nth-child(4) {
+  flex: 0.8;
+}
+.rotate {
+  transform: rotate(90deg);
+}
+.left_arrow {
+  transform: rotate(180deg);
+}
+.right_arrow {
+  transform: rotate(360deg);
+}
+nav p {
+  width: 100%;
+  font-size: 14px;
+}
+.nav_login p {
+  text-align: center;
+}
+.parent_nav > div:hover {
+  background: rgb(243, 244, 245);
+  cursor: pointer;
+}
+
+.menu_options {
+  display: none;
+}
+
+.nav_menu:hover .menu_options {
+  display: block;
+  position: absolute;
+  background: white;
+  top: 62px;
+  left: 83%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 2;
+  border-radius: 10px;
+  width: 11%;
+  padding-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.menu_options p {
+  font-family: Proxima Vara, Arial, Helvetica, Sans, Sans-Serif;
+  font-size: 14px;
+}
+
+.currency_options {
+  display: none;
+}
+.nav_currency:hover .currency_options {
+  display: block;
+  position: absolute;
+  background: white;
+  top: 62px;
+  left: 88%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 2;
+  border-radius: 10px;
+  width: 10%;
+  padding-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.currency_options p {
+  font-family: Proxima Vara, Arial, Helvetica, Sans, Sans-Serif;
+  font-size: 14px;
+}
+.menu_options > p:nth-child(1):hover {
+  background: rgb(249, 250, 250);
+}
+.menu_options > p:nth-child(2):hover {
+  background: rgb(249, 250, 250);
+}
+.menu_options > p:nth-child(3):hover {
+  background: rgb(249, 250, 250);
+}
+.menu_options > p:nth-child(4):hover {
+  background: rgb(249, 250, 250);
+}
+
+#main {
+  width: 1330px;
+  margin: 120px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#hotelDetails {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  width: 500px;
+}
+
+#head {
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#head img {
+  width: 100%;
+  border-radius: 10px;
+}
+#back {
+  height: 60px;
+  width: 250px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background-color: #007cc2;
+  border-radius: 9px;
+  font-size: 17px;
+}
+.slide {
+  animation-name: slideImage;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes slideImage {
+  from {
+    transform: scale(1.5);
+    opacity: 40%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+#center {
+  padding: 10px 20px 0px 20px;
+}
+
+#center div {
+  display: flex;
+  gap: 20px;
+}
+
+#rating {
+  background-color: #d6e2fa;
+  padding: 2px 10px 2px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+#bottom {
+  padding: 0px 20px;
+}
+
+#duration {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#prices {
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 90px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#prices p {
+  margin-bottom: 0px;
+}
+
+#lastbill {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+#customerDetails {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  width: 700px;
+  height: 800px;
+  padding-bottom: 30px;
+  margin-right: 110px;
+}
+
+#heading {
+  padding: 20px 0px 20px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #e6e6e6;
+  border-radius: 8px 8px 0px 0px;
+}
+
+#numdec {
+  background-color: #007cc2;
+  color: white;
+  border-radius: 10px;
+  padding: 4px 4px 4px 13px;
+  margin-right: 10px;
+}
+
+#user_details {
+  padding: 10px 20px;
+}
+
+#primary {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 100px;
+  row-gap: 20px;
+}
+
+#primary div {
+  display: grid;
+}
+
+#primary label {
+  font-weight: bold;
+  padding-bottom: 8px;
+  padding-left: 3px;
+  font-size: 20px;
+}
+
+#primary input {
+  height: 60px;
+  width: 300px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: whitesmoke;
+}
+
+#primary input[type="submit"] {
+  background-color: #007cc2;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#primary #otp {
+  display: none;
+}
+
+#yourDetails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  font-weight: 500;
+}
+
+#paymentDetails {
+  opacity: 50%;
+}
+
+#paymentOptions {
+  height: 100px;
+  margin-top: 20px;
+  display: none;
+  justify-content: center;
+  gap: 50px;
+}
+
+#paymentOptions div {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.setBlue {
+  background-color: #007cc2;
+  color: white;
+}
+
+.setSmoke {
+  background-color: whitesmoke;
+}
+
+#pay {
+  height: 60px;
+  text-align: center;
+}
+
+#final {
+  font-weight: bold;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+#pay {
+  width: 42%;
+  margin: auto;
+}
+
+#pay input {
+  height: 40px;
+  padding-left: 10px;
+}
+
+.main {
+  width: 210px;
+  height: 210px;
+  border: 5px solid black;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.main p {
+  text-align: center;
+  margin-top: 43%;
+  font-weight: bold;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background: #007cc2;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  margin: auto;
+  animation: circle 2s linear infinite;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-95px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-95px) rotate(-360deg);
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #main {
+    width: 100%;
+    margin: 80px auto;
+    display: block;
+  }
+
+  #hotelDetails {
+    width: 90%;
+    margin: 0 auto 40px auto;
+  }
+
+  #head {
+    height: 200px;
+    border-radius: 0px;
+  }
+
+  #head img {
+    border-radius: 0px;
+  }
+
+  #center {
+    padding: 0px 20px;
+  }
+
+  #center div {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  #rating {
+    margin-top: 10px;
+  }
+
+  #duration {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: none;
+    margin-bottom: 20px;
+  }
+
+  #prices {
+    display: block;
+    column-gap: 0px;
+    border-bottom: none;
+    margin-bottom: 20px;
+  }
+
+  #prices p {
+    margin-bottom: 5px;
+  }
+
+  #lastbill {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0px;
+  }
+
+  #customerDetails {
+    width: 90%;
+    height: auto;
+    padding-bottom: 0px;
+    margin: 0 auto;
+  }
+
+  #user_details {
+    padding: 0px 10px;
+  }
+
+  #primary {
+    display: block;
+    column-gap: 0px;
+    row-gap: 10px;
+  }
+
+  #primary div {
+    display: block;
+  }
+
+  #primary label {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+
+  #primary input {
+    height: 50px;
+  }
+
+  #primary input[type="submit"] {
+    font-size: 14px;
+  }
+
+  #yourDetails {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  #paymentOptions {
+    height: auto;
+    display: block;
+  }
+
+  #paymentOptions div {
+    height: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  #pay {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
