@@ -44,7 +44,8 @@ function submitFunc() {
         localStorage.setItem("checkInDate", checkInValue);
         localStorage.setItem("checkOutDate", checkOutValue);
         localStorage.setItem("searchQuerry", searchQuerry);
-        window.location.href = "./search.html";
+        window.location.href = "#";
+        // "./search.html";
     }
     else if (!searchQuerry) {
         alert("Enter Location");
@@ -178,7 +179,7 @@ function gotoLoginPage() {
 }
 document.querySelector(".recently_viewed").addEventListener("click", gotoRecent);
 function gotoRecent() {
-    window.location.href = "../Menu/recently.html";
+    window.location.href = "#";
 }
 document.querySelector(".help_support").addEventListener("click", gotoHelp);
 function gotoHelp() {
@@ -191,5 +192,24 @@ function clearInputFunc() {
     document.querySelector(".searchQuerry").value = "";
 }
 
+
+
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 10;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
 
 
