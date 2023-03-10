@@ -13,23 +13,24 @@ function display(arr) {
 
     let textsDiv = document.createElement("div");
 
-    let search = localStorage.getItem("searchQuerry");
+    //let search = localStorage.getItem("searchQuerry");
     let city = document.createElement("p");
-    city.textContent = search;
+    city.textContent = arr[i].hotelName;
 
     let checkIn = localStorage.getItem("checkInDate");
     let checkOut = localStorage.getItem("checkOutDate");
 
     let duration = document.createElement("p");
     duration.setAttribute("id", "info");
-    duration.textContent = getDay(checkIn) + " to " + getDay(checkOut);
+    duration.textContent =
+      "Dates:" + getDay(checkIn) + " to " + getDay(checkOut);
     textsDiv.append(city, duration);
     var make = document.createElement("button");
     make.addEventListener("click", function () {
       bookitem(elem, index);
     });
     make.setAttribute("class", "book");
-    make.innerHTML = "Book Now " + `&nbsp` + ">";
+    make.innerHTML = "Book Now " + ` `;
     make.addEventListener("click", function () {
       window.location.href = "booking.html";
     });

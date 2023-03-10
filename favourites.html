@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My favourites</title>
     <link rel="stylesheet" href="./favourites.css" />
-    <link rel="stylesheet" href="../navbar_styles/navbar.css" />
+    <link rel="stylesheet" href="./navbar.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -20,15 +20,18 @@
 
   <body>
     <div id="navbar">
-      <div onclick="window.location.href='../index.html'">
+      <div>
         <img
           src="https://logos-world.net/wp-content/uploads/2022/05/Trivago-Logo-700x394.png"
           alt=""
+          onclick="window.location.href='./index.html'"
         />
       </div>
 
+      <!---------------------Navbar section start-------------------------------------------------------------->
+
       <div id="navlist">
-        <a href="" style="color: #007cc2; border-bottom: 3px solid#007cc2">
+        <a href="">
           <i class="fa-regular fa-heart" style="font-size: 23px; opacity: 80%">
           </i>
           &nbsp; My favourites
@@ -52,14 +55,14 @@
       <p>Ready to browse and favourite stays?</p>
       <button
         style="cursor: pointer"
-        onclick="window.location.href='search.html'"
+        onclick="window.location.href='hotels.html'"
       >
         Explore stays
       </button>
     </div>
 
     <div id="activity">
-      <p>Your recent activity</p>
+      <p>Your favourites</p>
 
       <div id="items"></div>
     </div>

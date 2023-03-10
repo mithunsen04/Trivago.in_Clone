@@ -55,13 +55,13 @@ function setData(data) {
   let roomPrice = document.querySelector("#roomPrice");
   let price = document.querySelector("#price1");
   let discount = document.querySelector("#discount");
-  let coupon = document.querySelector("#coupon");
+
   let total = document.querySelector("#total");
 
   let checkIn = localStorage.getItem("checkInDate");
   let checkOut = localStorage.getItem("checkOutDate");
   let roomsData = localStorage.getItem("rooms_number");
-
+  console.log("Rooms", roomsData);
   //taking out data
   let guests = JSON.parse(localStorage.getItem("totalGuest"));
   let bill = Number.parseInt(data.bookingCost);
@@ -73,8 +73,8 @@ function setData(data) {
   let roompriceVal = `Room price for ${nightVal} Night X ${guests} Guests`;
   let priceVal = actual;
   let discountVal = (actual * 5) / 100;
-  let couponVal = (actual * 20) / 100;
-  let totalVal = actual - discountVal - couponVal + 100;
+
+  let totalVal = actual - discountVal + 100;
 
   console.log(totalVal);
 
@@ -85,7 +85,7 @@ function setData(data) {
   roomPrice.textContent = roompriceVal;
   price.textContent = "₹" + priceVal;
   discount.textContent = "₹" + discountVal;
-  coupon.textContent = "₹" + couponVal;
+
   total.textContent = "₹" + totalVal;
 }
 
@@ -95,22 +95,16 @@ function findDuration(a, b) {
   let date2 = new Date(b);
   var diff = Math.abs(date2.getTime() - date1.getTime());
   var duration = Math.ceil(diff / (1000 * 3600 * 24));
+  console.log(duration);
   return duration;
 }
 
 function getDay(a) {
   let date = new Date(a);
   let month = date.toLocaleString("default", { month: "short" });
-  let num = "";
-  for (let i = a.length - 1; i >= 0; i--) {
-    if (a[i] == "-") {
-      break;
-    }
-
-    num += a[i];
-  }
-
-  return num + " " + month;
+  let day = date.getDate().toString();
+  console.log(day);
+  return day + " " + month;
 }
 
 function generateOtp() {
@@ -141,7 +135,10 @@ document
   .querySelector("#otpButton")
   .addEventListener("click", async function clicker() {
     let email = document.querySelector("#userEmail").value;
-
+    if (email == 0) {
+      alert("Fill details");
+      return;
+    }
     if (!isValid(email)) {
       alert("Invalid Email");
       return;

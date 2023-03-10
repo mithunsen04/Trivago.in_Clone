@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booking</title>
     <link rel="stylesheet" href="./booking.css" />
-    <link rel="stylesheet" href="../navbar_styles/navbar.css" />
+    <link rel="stylesheet" href="./navbar.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -24,7 +24,7 @@
   </head>
   <body>
     <div id="navbar">
-      <div onclick="window.open('../index.html')">
+      <div onclick="window.open('./index.html')">
         <img
           src="https://logos-world.net/wp-content/uploads/2022/05/Trivago-Logo-700x394.png"
           alt=""
@@ -32,12 +32,12 @@
       </div>
 
       <div id="navlist">
-        <a href="../favourites/favourites.html">
+        <a href="./favourites.html">
           <i class="fa-regular fa-heart" style="font-size: 23px; opacity: 80%">
           </i>
           &nbsp; My favourites
         </a>
-        <a href=""> Log in </a>
+        <a href="./login.html"> Log in </a>
         <a> Menu &nbsp; <i class="fa-solid fa-chevron-down"></i> </a>
         <a> INR &nbsp; <i class="fa-solid fa-chevron-down"></i> </a>
       </div>
@@ -68,11 +68,8 @@
           <div id="prices">
             <p id="roomPrice">Room price for 1 Night X 2 Guests</p>
             <p id="price1">₹960</p>
-            <p>Discount 5%(New user)</p>
+            <p>Discount 5%(Site discount)</p>
             <p id="discount">-250</p>
-            <p>Coupon Code:</p>
-
-            <p id="coupon">-100</p>
           </div>
 
           <div id="lastbill">
@@ -81,6 +78,15 @@
               <h5 style="font-weight: lighter">inclusive of all taxes</h5>
             </div>
             <div><h2 id="total">₹500</h2></div>
+          </div>
+          <div>
+            <button
+              id="back"
+              style="cursor: pointer"
+              onclick="window.location.href='hotels.html'"
+            >
+              Incorrect booking? Click to change
+            </button>
           </div>
         </div>
       </div>
@@ -174,7 +180,7 @@
           Password: "BA3EA10909EC1121A81021DF4632399BE5CB",
           To: email,
           From: "trivago.verify45@gmail.com",
-          Subject: "Email varifivation",
+          Subject: "Email verification",
           Body:
             "Your OTP is " + OTP + ". Please use this OTP to verify your Email",
         });
