@@ -23,7 +23,7 @@
 h1 {
   font-size: 31px;
   margin-top: 40px;
-  font-weight:750;
+  font-weight: 750;
   font-stretch: expanded;
 }
 #logo img {
@@ -77,34 +77,50 @@ button {
   border-bottom: 1px solid rgb(135, 134, 134);
   margin: 0 15px;
 }
-#directLogin{
-    width: 355;
-    /* margin-left: 37%; */
-    margin-top: 20px;
-    display: flex;
+#directLogin {
+  width: 355;
+  /* margin-left: 37%; */
+  margin-top: 20px;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
+#directLogin .Google img,
+#directLogin .Ios img,
+#directLogin .Fb img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
 #directLogin .Google,
-#directLogin .Ios, 
+#directLogin .Ios,
 #directLogin .Fb {
-    height: 54px;
-    width: 358px;
-    border-radius: 8px;
-    margin-top: 10px;
-   border: 1px solid black;
-    border-color: rgb(133, 128, 128);
+  display: flex;
+  align-items: center;
+  height: 54px;
+  width: 358px;
+  border-radius: 8px;
+  border: 1px solid black;
+  border-color: rgb(133, 128, 128);
+  margin-bottom: 10px;
 }
-#directLogin p>span{
-    color: blue;
+
+#directLogin .Google p {
+  margin: 0;
+  margin-left: 60px;
+  text-align: center;
 }
-#directLogin img{
-    height: 30px;
-    width: 30px;
-    padding: 12px 10px;
+#directLogin .Fb p {
+  margin-left: 60px;
 }
+#directLogin .Ios p {
+  margin-left: 70px;
+}
+#directLogin p > span {
+  color: blue;
+}
+
 #directLogin a {
-    text-align: center;
-    display: block;
-    
-  }
+  text-align: center;
+  display: block;
+}

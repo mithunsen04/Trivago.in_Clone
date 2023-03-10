@@ -6,16 +6,12 @@ loginForm.addEventListener('submit', (event) => {
   
   if (!emailInput.value) {
     // Show error message if email input field is empty
-    const error = document.createElement('div');
-    // const error = document.createElement('p');
+    const error = document.createElement('p');
     error.textContent = 'Enter your email address.';
     error.style.color = '#DB3734';
-    error.style.border = '1px solid #DB3734'
-    error.style.height = '35px'
-    error.style.width = '357px'
-    error.style.position = 'relative'
-    error.style.marginTop = '8px'
-    error.style.textAlign = 'center'
+    error.style.marginTop = '8px';
+    error.style.textAlign = 'center';
+    error.classList.add('error');
     
     emailInput.insertAdjacentElement('afterend', error);
   } else {
@@ -30,17 +26,11 @@ loginForm.addEventListener('submit', (event) => {
     }
   }
 });
- // Handle login form submit
- const form = document.querySelector('form');
- form.addEventListener('submit', (event) => {
-   event.preventDefault();
 
-   const email = document.getElementById('email').value;
-   const password = document.getElementById('password').value;
-
-   // Store email in local storage
-   localStorage.setItem('email', email);
-
-   // Redirect to password.html
-   window.location.href = 'password.html';
- });
+// Hide error message when user starts typing in email input field
+emailInput.addEventListener('input', () => {
+  const error = document.querySelector('.error');
+  if (error) {
+    error.remove();
+  }
+});

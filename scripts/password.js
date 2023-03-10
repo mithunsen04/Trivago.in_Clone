@@ -12,9 +12,6 @@ loginForm.addEventListener('submit', (event) => {
     const error = document.createElement('p');
     error.textContent = 'Enter your password.';
     error.style.color = '#DB3734';
-    error.style.border = '1px solid #DB3734';
-    error.style.height = '35px';
-    error.style.width = '357px';
     error.style.marginTop = '8px';
     error.style.textAlign = 'center';
     error.style.borderRadius = '8px';
@@ -23,11 +20,8 @@ loginForm.addEventListener('submit', (event) => {
   } else if (passwordInput.value !== storedPassword) {
     // Show error message if password is incorrect
     const error = document.createElement('p');
-    error.textContent = 'Your email or password is incorrect.';
+    error.textContent = 'The email/password combination you entered is wrong. Please double-check both or click “Forgot your password?”.';
     error.style.color = '#DB3734';
-    error.style.border = '1px solid #DB3734';
-    error.style.height = '35px';
-    error.style.width = '357px';
     error.style.marginTop = '8px';
     error.style.textAlign = 'center';
     error.style.borderRadius = '8px';
