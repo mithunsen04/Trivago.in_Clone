@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <script src="https://kit.fontawesome.com/5fc882c95a.js" crossorigin="anonymous"> </script>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeXTVDu67JZDJNNRO9MhA7OBpUHYgEC54aw&usqp=CAU">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"> -->
+    <!-- <link rel="icon" type="image/x-icon" href="https://cdn.xxl.thumbs.canstockphoto.com/planet-mercury-symbol-mercury-sign-abstract-night-sky-background-picture_csp57783177.jpg"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Proxima Vara", Arial, Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-image:url("https://plus.unsplash.com/premium_photo-1676573201641-beb5276a8943?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80") ;
+            background-size: cover;
+        }
+        
+        .payment {
+            background-color: transparent;
+            max-width: 360px;
+            text-align: center;
+            height: auto;
+            margin: 80px auto;
+            padding: 35px;
+            padding-top: 70px;
+            position: relative;
+            border:2px solid black;
+            border-radius:20px;
+        }
+        
+        .payment h4 {
+            text-align: center;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+            color: black
+        }
+        
+        .form label {
+            display: block;
+            color:black;
+            margin-bottom: 6px;
+            text-align: left;
+            font-weight: bolder;
+        }
+        
+        .form input {
+            padding: 13px 0 13px 25px;
+            width: 100%;
+            text-align: center;
+            border: 2px solid #555555;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            outline: none;
+            font-size: 16px;
+            color: black;
+        }
+        
+        .card-grp {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .card-item {
+            width: 48%
+        }
+        
+        .space {
+            margin-bottom: 15px;
+        }
+        
+        .icon-relative {
+            position: relative;
+        }
+        
+        .icon-relative i {
+            position: absolute;
+            bottom: 12px;
+            left: 15px;
+            font-size: 20px;
+            color: black;
+        }
+        
+        .btn {
+            margin-top: 40px;
+            width: 100%;
+            height: 40px;
+            background-color:green;
+            text-align: center;
+            
+            color: whitesmoke;
+            padding: 6px;
+            cursor: pointer;
+            font-size: 20px;
+            border:none
+        }
+        
+        .logo::before {
+            content: "";
+            overflow: visible;
+            position: absolute;
+            top: 5px;
+            left: -33px;
+            width: 90px;
+            height: 90px;
+            background: whitesmoke;
+            border-radius: 50%;
+        }
+        .payment .logo {
+            position: absolute;
+            top: -50px;
+            transform: translate(-50%);
+            line-height: 100px;
+            left: 49.5%
+            
+        }
+        
+        .payment .logo i {
+            color:green;
+            padding: 3px;
+            margin-left: 12px;
+            position: absolute;
+            font-size: 50px;
+            transform: translate(-50%);
+            line-height: 100px;
+            left: 49.5%
+            
+        }
+        
+        #totalPrice {
+            font-size: 17px;
+        }
+        .wrapper{
+            display:flex
+        }
+        .img_div{
+            width:360px;
+            height: auto;
+        }
+        .my_i{
+            width: 100%;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        p{
+            width: 100%;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    
+    <div class="wrapper">
+    
+        
+        <div class="payment">
+            <!-- <div class="logo"></div>  -->
+            <svg width="180" height="56.5" viewBox="0 0 102 32">
+                <path d="M33.706 6.989h5.441l4.133 11.149h.066l3.83-11.149h5.071L45.8 23.377h-5.34" fill="#FC9E15" />
+                <path
+                  d="M13.971 11.018H9V16.5c0 .93.082 2.119.959 2.655a4.649 4.649 0 0 0 2.9.283 2.242 2.242 0 0 0 1.107-.386v4.2a10.114 10.114 0 0 1-1.938.4c-3.556.359-8.54-.253-8.54-4.838v-7.8H0V6.988h3.492V2.153H9v4.836h4.97v4.03zm14.1-4.03h4.97v16.389h-4.97V6.989zm-.2-4.311a2.676 2.676 0 1 1 5.351 0 2.677 2.677 0 0 1-5.353 0"
+                  fill="#1391D2" />
+                <path
+                  d="M90.124 15.195c0 2.215 1.289 4.13 3.648 4.13s3.647-1.915 3.647-4.131-1.287-4.133-3.647-4.133-3.647 1.917-3.648 4.134m-4.556 0a8.224 8.224 0 0 1 14.711-5.43 9.491 9.491 0 0 1 .687 9.766 8.214 8.214 0 0 1-15.4-4.336M80.24 6.973v2.2h-.076a3.041 3.041 0 0 0-.574-.613c-3.254-2.8-8.812-2.238-10.915 1.679a11.506 11.506 0 0 0-.924 6.812c.283 2.077 1.05 4.275 2.879 5.478a7.739 7.739 0 0 0 6.936.71 4.8 4.8 0 0 0 2.075-1.572h.059v1.588a3.9 3.9 0 0 1-.984 2.881c-1.449 1.493-4.218 1.4-6.079.894a9.223 9.223 0 0 1-2.914-1.307l-2.451 3.6a11.307 11.307 0 0 0 3.906 1.9c3.583.949 8.543.928 11.312-1.921 1.561-1.606 2.2-3.96 2.2-7.06V6.971h-4.448zM78.984 18.2a3.707 3.707 0 0 1-5.4 0 5.013 5.013 0 0 1 0-6 3.707 3.707 0 0 1 5.4 0 5.011 5.011 0 0 1 0 6c-.639.763.641-.763 0 0z"
+                  fill="#E3403D" />
+                <path
+                  d="M15.314 6.989h5.105v2.686h.051A5.715 5.715 0 0 1 22.384 7.4a6.338 6.338 0 0 1 4.482-.6v4.6c-1.029-.278-3.2-.715-4.717.211-.96.586-1.731 1.288-1.731 4.929v6.839h-5.105V6.989z"
+                  fill="#1391D2" />
+                <path
+                  d="M56.992 16.844c-1 .62-1.683 1.829-.763 2.775.9.922 2.522.829 3.632.441a2.98 2.98 0 0 0 2.2-2.784v-1.018c.017 0-3.794-.208-5.069.585zm5.07 4.518h-.093a5.079 5.079 0 0 1-2.232 1.852c-3.563 1.464-8.748-.019-8.75-4.492 0-4.655 5.07-5.606 8.784-5.712a89.25 89.25 0 0 1 2.267-.034 2.62 2.62 0 0 0-.957-2.132 4.243 4.243 0 0 0-4.535-.268A6.2 6.2 0 0 0 54.716 12l-2.688-2.752a9.255 9.255 0 0 1 3.292-1.966 11.844 11.844 0 0 1 7.044-.27 5.625 5.625 0 0 1 3.952 4.437 17.479 17.479 0 0 1 .314 3.61v8.317h-4.567v-2.014z"
+                  fill="#FC9E15" />
+              </svg>
+            
+
+            <h4>Enter Card Details</h4>
+            <div class="form">
+                <div class="card space icon-relative">
+                    <label class="label">Card Holder:</label>
+                    <input type="text" class="input" placeholder="Name On card">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="card space icon-relative">
+                    <label class="label">Card Number:</label>
+                    <input type="number" id="c_num" class="input" placeholder="Card Number" minlength="16" maxlength="16">
+                    <i class="fa-sharp fa-solid fa-credit-card"></i>
+                </div>
+                <div class="card-grp space">
+                    <div class="card-item icon-relative">
+                        <label class="label">Expiry mm/yy</label>
+                        <input type="password" class="input" id="expire" placeholder="00 / 00" minlength="5" maxlength="5">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="card-item icon-relative">
+                        <label class="label">CVV/CVC:</label>
+                        <input type="password" class="input" id="cvv" placeholder="" minlength="3" maxlength="3">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                </div>
+
+
+                <button class="btn">Pay <span><i id="totalPrice" class="fa-sharp fa-solid fa-dollar-sign"></i></span></button>
+
+
+            </div>
+        </div>
+    
+</div>
+</body>
+
+</html>
+<script>
+    document.getElementById("totalPrice").innerText = localStorage.getItem("totalval")
+    document.querySelector("button").addEventListener("click", Myinput)
+
+    function Myinput() {
+        var card_num = document.getElementById("c_num").value;
+        var card_expire = document.getElementById("expire").value;
+        var card_cvv = document.getElementById("cvv").value;
+        console.log(card_num.length)
+
+
+        if (card_cvv.length != 3 || card_expire.length != 5 || card_num.length > 16 || card_num.length != 16) {
+            alert("check your Entered Details")
+        } else {
+            window.location.href = "otp.html"
+
+        }
+    }
+</script>
