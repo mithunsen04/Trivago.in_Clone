@@ -16,8 +16,6 @@
             font-family: Ubuntu, sans-serif;
         }
         
-       
-        
         .payment {
             background-color: whitesmoke;
             max-width: 360px;
@@ -26,7 +24,6 @@
             margin: 80px auto;
             padding: 35px;
             padding-top: 70px;
-           
             position: relative;
         }
         
@@ -85,13 +82,14 @@
             margin-top: 40px;
             width: 100%;
             height: 40px;
-            background-color: black;
+            background-color:green;
             text-align: center;
-            border-radius: 6px;
+            
             color: whitesmoke;
             padding: 6px;
             cursor: pointer;
             font-size: 20px;
+            border:none
         }
         
         .logo::before {
@@ -105,16 +103,17 @@
             background: whitesmoke;
             border-radius: 50%;
         }
-        
         .payment .logo {
             position: absolute;
             top: -50px;
             transform: translate(-50%);
             line-height: 100px;
             left: 49.5%
+            
         }
         
         .payment .logo i {
+            color:green;
             padding: 3px;
             margin-left: 12px;
             position: absolute;
@@ -122,16 +121,43 @@
             transform: translate(-50%);
             line-height: 100px;
             left: 49.5%
+            
         }
         
         #totalPrice {
             font-size: 17px;
         }
+        .wrapper{
+            display:flex
+        }
+        .img_div{
+            width:360px;
+            height: auto;
+        }
+        .my_i{
+            width: 100%;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        p{
+            width: 100%;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
     </style>
 </head>
 
 <body>
+    
+    
     <div class="wrapper">
+        <div class="img_div">
+            <img src="https://th.bing.com/th/id/OIP._yw9cGG6FaDHOjHdTbeU1AHaJQ?w=154&h=193&c=7&r=0&o=5&pid=1.7" class="my_i">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum quidem, 
+                doloremque, dolorum expedita omnis quo fugiat, 
+                esse dolorem pariatur cupiditate. 
+                Facilis ea deserunt dolore quisquam eum suscipit sed magnam.</p>
+        </div>
         <div class="payment">
             <div class="logo"><i class="fa-sharp fa-solid fa-file-invoice"></i></div>
 
