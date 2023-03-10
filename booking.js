@@ -71,10 +71,10 @@ function setData(data) {
   let durationVal = `${getDay(checkIn)} to ${getDay(checkOut)}`;
   let userprefVal = `${roomsData} Rooms, ${guests} Guests`;
   let roompriceVal = `Room price for ${nightVal} Night X ${guests} Guests`;
-  let priceVal = actual;
-  let discountVal = (actual * 5) / 100;
+  let priceVal = actual*roomsData;
+  let discountVal = (priceVal * 5) / 100;
 
-  let totalVal = actual - discountVal + 100;
+  let totalVal = priceVal - discountVal + 100;
   localStorage.setItem("totalval", totalVal);
   console.log(totalVal);
 

@@ -9964,5 +9964,5 @@ function bookitem(elem,index){
  
     localStorage.setItem("rooms",room);
     localStorage.setItem("bookingdata",JSON.stringify(elem));
-    window.open("./booking/booking.html");
+    window.open("./booking.html");
 }

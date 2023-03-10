@@ -64,7 +64,7 @@ function submitFunc() {
         localStorage.setItem("searchQuerry", searchQuerry);
         let checkOutValue = document.querySelector(".calen2").value;
         localStorage.setItem("checkOutDate", checkOutValue);
-        window.location.href = "./search.html";
+        window.location.href = "/hotels.html";
     }
   
 
@@ -159,7 +159,7 @@ function decreaseRoom() {
 
 document.querySelector(".myFav_text").addEventListener("click", gotoMyFavPage);
 function gotoMyFavPage() {
-    window.location.href = "./favourites/favourites.html";
+    window.location.href = "favourites.html";
 }
 
 document.querySelector(".nav_login").addEventListener("click", gotoLoginPage);
@@ -169,13 +169,13 @@ function gotoLoginPage() {
 
 document.querySelector(".account_settings").addEventListener("click", gotoAccount);
 function gotoAccount() {
-    window.location.href = "./Menu/account.html";
+    window.location.href = "./account.html";
 }
 
 
 document.querySelector(".nav_login").addEventListener("click", gotoLoginPage);
 function gotoLoginPage() {
-    window.location.href = "../Login/email.html";
+    window.location.href = "./login.html";
 }
 document.querySelector(".recently_viewed").addEventListener("click", gotoRecent);
 function gotoRecent() {
