@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeXTVDu67JZDJNNRO9MhA7OBpUHYgEC54aw&usqp=CAU">
+    <style>
+        *{
+            font-family: "Proxima Vara", Arial, Arial, Helvetica, sans-serif;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: #000000;
+            background-image: url(https://i.pinimg.com/564x/da/0e/13/da0e1380f2814c04228bb099dafb5bb0.jpg);
+            background-size: cover;
+        }
+        
+        .container {
+            display: flex;
+            flex-flow: column;
+            height: 100%;
+            align-items: space-around;
+            justify-content: center;
+        }
+        
+        .userInput {
+            display: flex;
+            justify-content: center;
+        }
+        
+        input {
+            margin: 10px;
+            height: 30px;
+            width: 65px;
+            border: none;
+            text-align: center;
+            font-family: arimo;
+            font-size: 1.1rem;
+            background: #eef2f3;
+        }
+        
+        button {
+            width: 150px;
+            height: 40px;
+            margin: 25px auto 0px auto;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            background-color: #16385f;
+            color: white;
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: arimo;
+            color: honeydew;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>ENTER OTP</h1>
+        <div class="userInput">
+            <input type="text" id="1st" maxlength="1" onkeyup="clickEvent(this,'2nd')">
+            <input type="text" id="2nd" maxlength="1" onkeyup="clickEvent(this,'3rd')">
+            <input type="text" id="3rd" maxlength="1" onkeyup="clickEvent(this,'4th')">
+            <input type="text" id="4th" maxlength="1">
+        </div>
+        <button>  CONFIRM</button>
+        <button onclick="resendOtp()">  RESEND OTP</button>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+    alert("Your Dummy OTP is 1 7 2 9")
+
+    function clickEvent(first, last) {
+        if (first.value.length) {
+            document.getElementById(last).focus();
+        }
+
+    }
+    document.querySelector("button").addEventListener("click", next)
+
+    function next() {
+        var st = document.getElementById("1st").value;
+        var sec = document.getElementById("2nd").value;
+        var rd = document.getElementById("3rd").value;
+        var th = document.getElementById("4th").value;
+        console.log(st + sec + rd + th)
+        if (st == 1 && sec == 9 && rd == 9 && th == 9) {
+            window.location.href = "lastpage.html"
+
+        } else if (st == "" || sec == "" || rd == "" || th == "") {
+            alert("Entered otp")
+        } else {
+            alert("Entered wrong otp")
+        }
+    }
+
+    function resendOtp() {
+        alert("Your Dummy OTP is 1 9 9 9")
+    }
+</script>
