@@ -45,7 +45,7 @@ function submitFunc() {
         localStorage.setItem("checkOutDate", checkOutValue);
         localStorage.setItem("searchQuerry", searchQuerry);
         window.location.href = "#";
-        // "./search.html";
+      
     }
     else if (!searchQuerry) {
         alert("Enter Location");
@@ -64,7 +64,8 @@ function submitFunc() {
         localStorage.setItem("searchQuerry", searchQuerry);
         let checkOutValue = document.querySelector(".calen2").value;
         localStorage.setItem("checkOutDate", checkOutValue);
-        window.location.href = "./search.html";
+        window.location.href = "help.html";
+        alert("hello");
     }
   
 
@@ -169,7 +170,7 @@ function gotoLoginPage() {
 
 document.querySelector(".account_settings").addEventListener("click", gotoAccount);
 function gotoAccount() {
-    window.location.href = "./Menu/account.html";
+    window.location.href = "account.html";
 }
 
 
