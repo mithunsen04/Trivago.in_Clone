@@ -27,13 +27,11 @@ function display(arr) {
     textsDiv.append(city, duration);
     var make = document.createElement("button");
     make.addEventListener("click", function () {
-      bookitem(elem, index);
+      bookitem(arr[i]);
     });
     make.setAttribute("class", "book");
     make.innerHTML = "Book Now " + ` `;
-    make.addEventListener("click", function () {
-      window.location.href = "booking.html";
-    });
+
     div.append(banner, textsDiv, make);
     container.append(div);
   }
@@ -57,4 +55,8 @@ function getDay(a) {
   }
 
   return gen + " " + month;
+}
+function bookitem(elem) {
+  localStorage.setItem("bookingdata", JSON.stringify(elem));
+  window.location.href = "booking.html";
 }
