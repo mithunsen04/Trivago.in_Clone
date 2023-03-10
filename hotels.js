@@ -9853,7 +9853,9 @@ function showcalen2(){
 
 
 document.querySelector(".part4_submit").addEventListener("click",submitFunc);
+
 function submitFunc(){
+    console.log("clicked");
     let checkInValue=document.querySelector(".calen1").value;
     let checkOutValue=document.querySelector(".calen2").value;
     let searchQuerry=document.querySelector(".searchQuerry").value;
