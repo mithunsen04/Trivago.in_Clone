@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="help.css">
+    <script src="https://kit.fontawesome.com/d042af9a63.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5fc882c95a.js" crossorigin="anonymous"> </script>
+    <title>help</title>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeXTVDu67JZDJNNRO9MhA7OBpUHYgEC54aw&usqp=CAU">
+<style>
+    * {
+    font-family: system-ui;
+}
+
+#navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    border-bottom: 1px solid rgb(202, 200, 200);
+    height: 70px;
+    z-index: 1;
+    background-color: white;
+}
+
+#navbar div {
+    width: 50%;
+}
+
+#navbar div img {
+    width: 125px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    padding-left: 30px;
+}
+
+#navlist {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navlist a {
+    text-decoration: none;
+    color: black;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 25px;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+#navlist a:hover {
+    background-color: rgb(243, 243, 243);
+}
+
+/*             ------------------              Navbar end               ------------------------------------ */
+
+#parent{
+    display: flex;
+    margin-top: 6%;
+    justify-content: center;
+    
+}
+#sidebar{
+/* border: 1px solid red; */
+margin-top: -1%;
+width:12%;
+margin-right: 5%;
+margin-left: -3%;
+
+}
+.backicon {
+  position: relative;  
+  top: 42px;
+  color: #3398f1;
+}
+#sidebar>div{
+    padding:8%;  
+}
+
+#sidebar>div>a{
+    color: #4f6a7e; 
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    word-spacing: 0.1em;
+}
+
+#accountSettingsdiv2{
+    display: flex;
+    gap: 10px;
+} 
+#sidebar>div>a:hover{
+    text-decoration-line: underline;
+}
+hr.style11{
+    height: 2px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #e2dfdf inset; 
+}
+
+#mainbar{
+    width: 39%;
+    height: max-content;
+    margin-left: -2%;
+    margin-top: -1%;
+    margin-right: 2%;
+}
+#mainbar>h1{
+    font-size: 40px;
+    
+}
+
+#selectionOfTopic{
+  margin-top: -5%;
+   padding-left: 10%;
+}
+.design{
+    position: relative;
+    top: 50px;
+  right: 65px;
+   
+}
+label{
+    font-weight: 600;
+    margin-left: -8%;
+}
+
+select{
+    width: 100%;
+    padding: 15px ;
+    margin: 8px 0;
+    outline: 0;
+    display: inline-block;
+    border: 2px solid #c7cad0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 450;
+  }
+  @media screen and  (min-width: 768px) and (max-width: 1024px) {
+    #sidebar {
+        display:none;
+    }
+    #navbar{
+        display: none;
+    }
+   
+    #mainbar{
+        margin-top: -10%;
+    width: 90%;
+    }
+   
+ }
+ @media screen and  (min-width: 480px) and (max-width: 768px) {
+    #sidebar {
+        display:none;
+    }
+    #navbar{
+        display: none;
+    }
+   
+    #mainbar{
+        margin-top: -10%;
+    width: 90%;
+    }
+          
+   
+ }
+</style>
+</head>
+
+<body>
+    <!--   ------------------------            Navbar Start           -------------------------------------              -->
+    <div id="navbar">
+        <div>
+            <img src="https://logos-world.net/wp-content/uploads/2022/05/Trivago-Logo-700x394.png" alt="">
+        </div>
+
+        <div id="navlist">
+
+            <a href=""> <i class="fa-regular fa-heart" style="font-size: 23px; opacity: 80%;"> </i> &nbsp; My favourites
+            </a>
+            <a href=""> Log in </a>
+            <a> Menu &nbsp; <i class="fa-solid fa-chevron-down"></i> </a>
+            <a> INR &nbsp; <i class="fa-solid fa-chevron-down"></i> </a>
+        </div>
+    </div>
+    <!--           ----------------------------            Navbar end               ----------------------------------            -->
+    <div id="parent">
+        <div id="sidebar">
+            <i class="fa-solid fa-chevron-left backicon"></i>
+            <div style="margin-top: 6px;"><a  style="color: #3398f1;" href="index.html" >Back</a></div>
+           
+            <div id="accountSettingsdiv"> <div id="pagevisit"></div><a id="accountSettings" href="#">Account Settings </a></div>
+         
+            <div id="accountSettingsdiv1" ><div id="pagevisit1"></div><a id="recetsettings" href="#">Recently viewed</a></div>
+            <div id="accountSettingsdiv2"> <div id="pagevisit2"></div><a id="helpsettings" href="help.html">Help and support</a></div>
+            <hr class="style11">
+            <div> <a style="color: black" href="">Log out</a></div>
+        </div>
+        <div id="mainbar">
+            <h1>Help and support</h1>
+            <div id="selectionOfTopic">
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="66" viewBox="0 0 52 66" tabindex="-1"
+                    class="pointer-events-none max-h-full max-w-full design">
+                    <circle cx="20.89" cy="17.78" r="5.82" fill="#D67763" />
+                    <circle cx="33.58" cy="31.62" r="8.58" fill="#BFDFEA" />
+                    <ellipse cx="39.13" cy="9.64" fill="#B2D17F" rx="9.63" ry="9.64" />
+                    <path fill="#F1D1CB"
+                        d="M50.29 52.2c-1.37-2.98-4.35-1.61-4.35-1.61L36.31 55l-.48-.13v-1.39c0-2.05-2.05-2.05-2.05-2.05h-9.02l-4.1-4.1H9.34l.4.28-.58-.16S9.25 60 9.2 59.96l20.09 5.48 4.47-2.05 14.91-6.83c.01-.02 2.99-1.38 1.62-4.36z" />
+                    <path fill="#37454D"
+                        d="M50.92 52.07c-1.24-2.71-3.81-2.39-4.99-1.85l-9.42 4.32v-.97c0-2.01-1.66-2.54-2.54-2.54h-8.82l-3.95-3.95a.48.48 0 00-.34-.14h-11v-2.8a.5.5 0 00-.49-.49H1.16a.5.5 0 000 .98h7.72V61.7H1.16a.5.5 0 000 .98h8.21a.5.5 0 00.49-.49v-1.51l19.5 5.31.12.01c.07 0 .14-.01.2-.04l19.38-8.89c1.19-.55 3.1-2.29 1.86-5zm-2.26 4.11L29.44 65 9.86 59.67V47.91h10.8l3.95 3.95c.09.09.21.14.34.14h9.02c.26 0 1.57.09 1.57 1.57v2.05c0 .23-.08 1.37-1.36 1.37H24.12a.5.5 0 000 .98h10.05c1.85 0 2.34-1.53 2.34-2.34v-.05c.06 0 .13-.01.19-.04l9.63-4.42c.26-.12 2.58-1.08 3.71 1.37 1.12 2.44-1.12 3.57-1.38 3.69z" />
+                    <g fill="#37454D">
+                        <path
+                            d="M44.44 29.52H30.77c-1.08 0-1.95.88-1.96 1.96v8.79c0 1.08.88 1.95 1.96 1.96h4.38l-1.42 4.24c-.08.22 0 .44.19.56.18.13.43.12.6-.03l5.56-4.77h4.38c1.08 0 1.95-.88 1.96-1.96v-8.8a2 2 0 00-1.98-1.95zm.98 10.75c0 .54-.44.97-.97.97h-4.74l-1.13.97-3.36 2.88.96-2.88.32-.97h-5.72a.97.97 0 01-.97-.97v-8.79c0-.54.44-.97.97-.97h13.67c.54 0 .97.44.97.97v8.79z" />
+                        <circle cx="33.21" cy="35.87" r="1.47" />
+                        <circle cx="42" cy="35.87" r="1.47" />
+                        <circle cx="37.61" cy="35.87" r="1.47" />
+                    </g>
+                    <path fill="#37454D"
+                        d="M24.41 15.49a1.95 1.95 0 00-2.75-.02l-.02.02-.12.12a7.33 7.33 0 10-7.29 7.95.5.5 0 000-.98 6.35 6.35 0 116.32-7.02l-.04-.04a1.95 1.95 0 00-2.75-.02l-.02.02c-.76.76-.76 2 0 2.76l3.34 3.34 3.34-3.34a2 2 0 00-.01-2.79zm-.69 2.06l-2.64 2.64-2.64-2.64a.98.98 0 011.38-1.38l.58.58.69.69.69-.69.58-.58a.97.97 0 011.37-.01l.01.01a1 1 0 01-.02 1.38z" />
+                    <g fill="#37454D">
+                        <path
+                            d="M39.13 4.38a3.57 3.57 0 00-3.5 2.97c0 .27.17.53.44.53h.87c.27 0 .44-.17.44-.35.18-.82.91-1.4 1.75-1.4.96 0 1.75.78 1.75 1.75 0 .71-.53 1.4-1.04 1.58-1.04.35-1.58 1.31-1.58 1.93v.44c0 .27.17.44.44.44h.87c.27 0 .44-.17.44-.44v-.27a.5.5 0 01.27-.44 3.6 3.6 0 002.36-3.33 3.51 3.51 0 00-3.51-3.41z" />
+                        <circle cx="39.13" cy="14.01" r="0.87" />
+                    </g>
+                </svg>
+                <label for="">What can we help you with</label>
+                <br>
+                <select name="" id="selectoption">
+                    <option  value="">Select a topic</option>
+                    <option value="opt1">I haven't received my booking confirmation</option>
+                    <option value="opt2">I hava a question about a payment issue</option>
+                    <option value="opt3">I want to cancel/modify my booking</option>
+                    <option  value="opt4">I found a error while using Trivago</option>
+                </select>
+            </div>
+            <div >
+                <div id="writing">
+
+                </div>
+                <h3>Still haven't found what you were looking for?</h3>
+                <p>You can write us about other topics on our full contact form or you can read more information about trivago on our help center.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="help.js"></script>
