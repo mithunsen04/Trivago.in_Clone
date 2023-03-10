@@ -3,840 +3,883 @@
 
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, Sans-Serif;
-    overflow-x: hidden;
-  }
-  header{
-    width: 100%;
-  }
-  main{
-    width: 100%;
-  }
-  footer{
-    width: 100%;
-    /* border: 40px solid rgb(161, 88, 100); */
-  }
-  nav div {
-    display: flex;
-  }
-  nav {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: flex-end;
-    border-bottom: 1px solid rgba(219, 221, 225);
-  }
-  nav > div {
-    width: 32%;
-  }
-  nav > div > div {
-    justify-content: center;
-    align-items: center;
-  }
-  .parent_nav > div div {
-    padding: 5px;
-  }
-  nav > div > div:nth-child(1) {
-    flex: 1;
-  }
-  nav > div > div:nth-child(2) {
-    flex: 0.6;
-  }
-  nav > div > div:nth-child(3) {
-    flex: 0.8;
-  }
-  nav > div > div:nth-child(4) {
-    flex: 0.8;
-  }
-  .rotate {
-    transform: rotate(90deg);
-  }
-  .left_arrow{
-    transform: rotate(180deg);
-  
-  }
-  .right_arrow{
-    transform: rotate(360deg);
-  
-  }
-  nav p {
-    width: 100%;
-    font-size: 14px;
-  }
-  .nav_login p {
-    text-align: center;
-  }
-  .parent_nav > div:hover {
-    background: rgb(243, 244, 245);
-    cursor: pointer;
-  }
-  
-  .menu_options {
-    display: none;
-  }
-  .nav_menu:hover .menu_options {
-    display: block;
-    position: absolute;
-    background: white;
-    top: 62px;
-    left: 83%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    z-index: 2;
-    border-radius: 10px;
-    width: 11%;
-    padding-left: 20px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-      rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  }
-  .menu_options p {
-    font-family: Proxima Vara, Arial, Helvetica, Sans, Sans-Serif;
-    font-size: 14px;
-  }
-  
-  .currency_options {
-    display: none;
-  }
-  .nav_currency:hover .currency_options {
-    display: block;
-    position: absolute;
-    background: white;
-    top: 62px;
-    left: 88%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    z-index: 2;
-    border-radius: 10px;
-    width: 10%;
-    padding-left: 20px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-      rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  }
-  .currency_options p {
-    font-family: Proxima Vara, Arial, Helvetica, Sans, Sans-Serif;
-    font-size: 14px;
-  }
-  .menu_options>p:nth-child(1):hover{
-    background: rgb(249,250,250);
-  }
-  .menu_options>p:nth-child(2):hover{
-    background: rgb(249,250,250);
-  }
-  .menu_options>p:nth-child(3):hover{
-    background: rgb(249,250,250);
-  }
-  .menu_options>p:nth-child(4):hover{
-    background: rgb(249,250,250);
-  }
-  
-  /* ------------------------------nav style ends here---------------------------------- */
-  
-  .welcome_div {
-    display: flex;
-    width: 73%;
-    margin: auto;
-    margin-top: 40px;
-    align-items: center;
-    gap: 40px;
-  }
-  .welcome_messages {
-    display: flex;
-    flex-direction: column;
-  }
-  .welcome_div_first {
-    font-size: 24px;
-    font-weight: 700;
-    font-family: Arial, Helvetica, Sans-Serif;
-  }
-  .welcome_div_second {
-    margin-top: -10px;
-  }
-  /* ------------------welcome message ends here--------------------------- */
-  
-  /* -----------------------functional div starts here----------------------- */
-  .x_inSearch{
-      width: 20px;
-      height: 20px;
-      padding: 5px 0;
-      cursor: pointer;
-  }
-  .functional_div {
-    width: 99%;
-    background-color: rgb(249, 250, 250);
-    margin: 30px auto;
-    padding-top: 40px;
-    padding-bottom: 25px;
-  }
-  .typeOfHotel_buttons {
-    width: 74%;
-    margin: auto;
-  }
-  .typeOfHotel_buttons > button {
-    padding: 10px;
-    border-radius: 10px 10px 0 0;
-    background: rgb(231, 244, 250);
-    border: none;
-  }
-  .complex_div {
-    background: white;
-    padding: 5px;
-    width: 73%;
-    margin: auto;
-    display: flex;
-    border-radius: 0 10px 10px 10px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-  }
-  .part1 {
-    display: flex;
-    width: 100%;
-    flex: 4;
-    align-items: center;
-    padding: 0 5px;
-  }
-  .part1 input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    outline: none;
-  }
-  .part1 button {
-    background: white;
-    border: none;
-    border-radius: 8px;
-  }
-  .part1 button:hover {
-    background: rgb(243, 244, 245);
-  }
-  
-  .part2 {
-    display: flex;
-    flex: 4;
-  }
-  .part3 {
-    display: flex;
-    flex: 2;
-  }
-  .part4 {
-    display: flex;
-    flex: 2;
-  }
-  .part4_submit {
-    width: 95%;
-    margin: auto;
-    background: rgb(0, 124, 194);
-    font-size: 16px;
-    font-weight: 700;
-    padding: 13px 5px;
-    border: none;
-    border-radius: 8px;
-    color: white;
-  }
-  .part4_submit:hover {
-    background: rgb(0, 95, 163);
-    cursor: pointer;
-  }
-  .imageOfCompanies {
-    width: 73%;
-    margin: auto;
-  }
-  .screenShotImg {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .screenShotImg img{
-    width: 100%;
-  }
-  .text_100 {
-    font-size: 14px;
-    color: rgb(175, 179, 188);
-  }
-  
-  .part3 {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .part3 p:nth-child(1) {
-    font-size: 12px;
-    font-weight: 700;
-  }
-  .part3 p:nth-child(2) {
-    font-size: 12px;
-    margin-top: -10px;
-  }
-  .resetBtn {
-    width: 25%;
-    height: 40px;
-    border-color: rgb(181, 183, 188);
-    background: white;
-    border-radius: 10px;
-    color: black;
-    font-weight: bold;
-  }
-  .resetBtn:hover {
-    background-color: rgb(108, 112, 122);
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  .applyBtn {
-    width: 25%;
-    height: 35px;
-    background: rgb(0, 124, 194);
-    border-radius: 10px;
-    color: white;
-    border: none;
-    font-weight: bold;
-  }
-  .applyBtn:hover {
-    background: rgb(0, 95, 163);
-    cursor: pointer;
-  }
-  .guestInfoDiv p {
-    font-size: 14px;
-    font-weight: 700;
-  }
-  .guestInfoDiv p:nth-last-child(1) {
-    font-size: 14px;
-    font-weight: 100;
-  }
-  .guestInfoDiv {
-    display: none;
-  }
-  .input_adults{
-      width: 20%;
-      border: 1px solid rgb(215,217,221);
-      border-radius: 10px;
-      outline: none;
-      text-align: center;
-  }
-  .input_childrens{
-      width: 20%;
-      border: 1px solid rgb(215,217,221);
-      border-radius: 10px;
-      outline: none;
-      text-align: center;
-  
-  }
-  .input_rooms{
-      width: 20%;
-      border: 1px solid rgb(215,217,221);
-      border-radius: 10px;
-      outline: none;
-      text-align: center;
-  
-  }
-  
-  .inc_adults{
-      width: 18%;
-      border-radius: 50%;
-      font-size: 30px;
-      border: 1px solid rgb(125,129,138);
-      background: white;
-  }
-  .inc_childrens{
-      width: 18%;
-      border-radius: 50%;
-      font-size: 30px;
-      border: 1px solid rgb(125,129,138);
-      background: white;
-  
-  }
-  .inc_rooms{
-      width: 18%;
-      border-radius: 50%;
-      font-size: 30px;
-      border: 1px solid rgb(125,129,138);
-      background: white;
-  
-  }
-  .dec_adults{
-      width: 18%;
-      border-radius: 50%;
-      font-size: 30px;
-      border: 1px solid rgb(125,129,138);
-      background: white;
-  
-  }
-  .dec_childrens{
-      width: 18%;
-      border-radius: 50%;
-      font-size: 30px;
-      border: 1px solid rgb(125,129,138);
-      background: white;
-  
-  }
-  .dec_rooms{
-      width: 18%;
-      border-radius: 50%;
-      font-size: 30px;
-      border: 1px solid rgb(125,129,138);
-      background: white;
-  
-  }
-  .mic{
-  background: white;
-  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, Sans-Serif;
+  overflow-x: hidden;
+}
+header{
+  width: 100%;
+}
+main{
+  width: 100%;
+}
+footer{
+  width: 100%;
+  /* border: 40px solid rgb(161, 88, 100); */
+}
+nav div {
+  display: flex;
+}
+nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid rgba(219, 221, 225);
+}
+nav > div {
+  width: 32%;
+}
+nav > div > div {
+  justify-content: center;
+  align-items: center;
+}
+.parent_nav > div div {
   padding: 5px;
-  }
-  .mic:hover{
-    background-color: rgb(242, 221, 221);
-  }
-  /* -----------------------functional div  ends here----------------------- */
-  
-  /* -----------------------recent_activity div starts here----------------------- */
-  
-  .recent_activity {
-    width: 73%;
-    margin: auto;
-    margin-top: 70px;
-  }
-  
-  .recent_activity > div:nth-child(1) > p {
-    font-family: Arial, Helvetica, Sans-Serif;
-    font-size: 20px;
-    font-weight: 700;
-  }
-  .parentOfImage_activity {
-    display: flex;
-  }
-  .recent1 {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    line-height: 15px;
-  }
-  
-  .parentOfAcitvities {
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 90px;
-    width: 50%;
-  }
-  .recentDataA p {
-  font-size: 12px;
-  }
-  .recentDataB p {
-  font-size: 12px;
-  }
-  .vertical_img{
-    width: auto;
-    /* display: none; */
-  }
-  .recentDataA{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: rgb(249,250,250);
-    border-radius: 20px;
-  }
-  .recentDataA button{
-    height: 40px;
-    width: 130px;
-    background-color: white;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 700;
-    border: 1px solid black;
-  }
-  .recentDataB{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: rgb(249,250,250);
-    border-radius: 20px;
-  }
-  .recentDataB button{
-    height: 40px;
-    width: 130px;
-    background-color: white;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 700;
-    border: 1px solid black;
-  }
-  
-  
-  
-  /* -----------------------recent_activity div ends here----------------------- */
-  
-  /* -----------------------top results starts here------------------------------- */
-  .top_results {
-    width: 78%;
-    margin: auto;
-    margin-top: 100px;
-  }
-  .top_results > div:nth-child(1) > p {
-    font-size: 20px;
-    font-weight: 700;
-    font-family: Arial, Helvetica, Sans-Serif;
-  }
-  .top_results > div:nth-child(2) {
-    width: 98%;
-    margin: auto;
-  }
-  .containerForTopCities {
-    
-    font-size: 14px;
-    width: 100%;
-    display: flex;
-  justify-content: space-around;
-    gap: 10px;
-   
-  }
-  .containerForTopDestinations {
-    font-size: 14px;
-    width: 50%;
-    display: flex;
-    gap: 10px;
-    overflow-x: scroll;
-    position: absolute;
-    top: 156.5vh;
-    width: 77%;
-    display: none;
-    /* change the upper line for js  */
-  }
-  .titleOfEachHotel {
-    font-size: 16px;
-    font-weight: 700;
-  }
-  .containerForTopDestinations img {
-    width: 257px;
-    height: 220px;
-    border-radius: 15px;
-  }
-  .containerForTopCities img {
-    width: 257px;
-    height: 220px;
-    border-radius: 15px;
-  }
-  .containerForTopCities > div {
+}
+nav > div > div:nth-child(1) {
+  flex: 1;
+}
+nav > div > div:nth-child(2) {
+  flex: 0.6;
+}
+nav > div > div:nth-child(3) {
+  flex: 0.8;
+}
+nav > div > div:nth-child(4) {
+  flex: 0.8;
+}
+.rotate {
+  transform: rotate(90deg);
+}
+.left_arrow{
+  transform: rotate(180deg);
+
+}
+.right_arrow{
+  transform: rotate(360deg);
+
+}
+nav p {
+  width: 100%;
+  font-size: 14px;
+}
+.nav_login p {
+  text-align: center;
+}
+.parent_nav > div:hover {
+  background: rgb(243, 244, 245);
+  cursor: pointer;
+}
+
+.menu_options {
+  display: none;
+}
+.nav_menu:hover .menu_options {
+  display: block;
+  position: absolute;
+  background: white;
+  top: 62px;
+  left: 83%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 2;
+  border-radius: 10px;
+  width: 11%;
+  padding-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.menu_options p {
+  font-family: Proxima Vara, Arial, Helvetica, Sans, Sans-Serif;
+  font-size: 14px;
+}
+
+.currency_options {
+  display: none;
+}
+.nav_currency:hover .currency_options {
+  display: block;
+  position: absolute;
+  background: white;
+  top: 62px;
+  left: 88%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 2;
+  border-radius: 10px;
+  width: 10%;
+  padding-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.currency_options p {
+  font-family: Proxima Vara, Arial, Helvetica, Sans, Sans-Serif;
+  font-size: 14px;
+}
+.menu_options>p:nth-child(1):hover{
+  background: rgb(249,250,250);
+}
+.menu_options>p:nth-child(2):hover{
+  background: rgb(249,250,250);
+}
+.menu_options>p:nth-child(3):hover{
+  background: rgb(249,250,250);
+}
+.menu_options>p:nth-child(4):hover{
+  background: rgb(249,250,250);
+}
+
+/* ------------------------------nav style ends here---------------------------------- */
+
+.welcome_div {
+  display: flex;
+  width: 73%;
+  margin: auto;
+  margin-top: 40px;
+  align-items: center;
+  gap: 40px;
+}
+.welcome_messages {
+  display: flex;
+  flex-direction: column;
+}
+.welcome_div_first {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, Sans-Serif;
+}
+.welcome_div_second {
+  margin-top: -10px;
+}
+/* ------------------welcome message ends here--------------------------- */
+
+/* -----------------------functional div starts here----------------------- */
+.x_inSearch{
+    width: 20px;
+    height: 20px;
+    padding: 5px 0;
     cursor: pointer;
-  }
-  .containerForTopDestinations > div {
-    cursor: pointer;
-  }
-  .containerForTopCities > div p {
-    padding: 0 8px;
-  }
-  .containerForTopDestinations > div p {
-    padding: 0 8px;
-  }
-  .top_city {
-    background-color: white;
-    border: none;
-    height: 44px;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 0 10px;
-    color: rgb(108, 112, 122);
-  }
-  .top_city:hover {
-    background: rgb(243, 244, 245);
-    color: black;
-  }
-  .top_destination:hover {
-    background: rgb(243, 244, 245);
-    color: black;
-  }
-  .top_city:focus {
-    border-bottom: 2px solid rgb(82, 124, 194);
-    color: rgb(82, 124, 194);
-  }
-  .top_city:focus > .containerForTopDestinations {
-    display: none;
-  }
-  .top_destination:focus {
-    border-bottom: 2px solid rgb(82, 124, 194);
-    color: rgb(82, 124, 194);
-  }
-  .top_destination {
-    background-color: white;
-    border: none;
-    height: 44px;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 0 10px;
-    color: rgb(108, 112, 122);
-  }
-  .topCityDestination_hr {
-    margin-top: 0px;
-    border: none;
-    border-bottom: 1px solid rgb(108, 112, 122);
-  }
-  
-  /* -----------------------top results ends here------------------------------- */
-  
-  /* -------------------------info starts here----------------------------------- */
-  .info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 78%;
-    margin: auto;
-    margin-top: 70px;
-    font-size: 16px;
-    color: grey;
-    font-family: Arial, Helvetica, Sans-Serif;
-    font-weight: 100;
-  }
-  .info > div > p:nth-child(1) {
-    color: black;
-    font-weight: 700;
-    font-size: 20px;
-  }
-  
-  /* -------------------------info ends here----------------------------------- */
-  
-  /* -------------------------more starts here----------------------------------- */
-  .more {
-    width: 78%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    display: flex;
-    gap: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  .more_title1 {
-    width: 100%;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  .more_title2 {
-    width: 100%;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  .more a {
-    font-size: 14px;
-    text-decoration: none;
-    color: rgb(104, 103, 103);
-  }
-  .more a:hover {
-    text-decoration: underline;
-  }
-  .more_body1 {
-    display: flex;
-    gap: 40px;
-    overflow-y: scroll;
-    height: 95px;
-    padding: 10px;
-    width: 100%;
-  }
-  .more_body2 {
-    display: flex;
-    gap: 40px;
-    overflow-y: scroll;
-    height: 95px;
-    padding: 10px;
-    width: 100%;
-  }
-  
-  .more_common {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  /* -------------------------more ends here----------------------------------- */
-  
-  /* ---------------------------------------footer starts here--------------------------------------- */
-  
-  
-  footer hr {
-    width: 100%;
-    margin: auto;
-    border-color: rgb(108, 112, 122);
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  footer {
-    font-family: Arial, Helvetica, Sans-Serif;
-    padding: 30px 40px;
-    width: 100%;
-    background: rgb(10, 17, 33);
-    color: white;
-    margin-top: 70px;
-  }
-  .parent_footer {
-    width: 85%;
-    margin: auto;
-  }
-  
-  .above_hr {
-    display: flex;
-    justify-content: space-between;
-  }
-  .above_hr p {
-    font-size: 14px;
-  }
-  .mail_info {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-  }
-  .mail_info input {
-    height: 30px;
-    width: 79%;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    font-size: 16px;
-    padding: 5px;
-  }
-  .mail_info button {
-    background: rgb(108, 112, 122);
-    font-size: 16px;
-    color: white;
-    border-radius: 10px;
-    font-weight: 600;
-    padding: 10px 10px;
-  }
-  .mail_info button:hover {
-    cursor: pointer;
-    background: rgb(175, 179, 188);
-  }
-  .below_hr p {
-    font-size: 14px;
-  }
-  .footer_logos {
-    margin-top: 30px;
-    display: flex;
-    gap: 10px;
-  }
-  .below_hr {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .country_parent {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .country_parent > div {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    height: 40px;
-    border: 1px solid white;
-    border-radius: 10px;
-  }
-  
-  #country {
-    width: 100%;
-    background: rgb(10, 17, 33);
-    color: white;
-    border: none;
-    outline: none;
-    height: 40px;
-    font-size: 14px;
-    border-radius: 10px;
-  }
-  #country:focus {
-    border: none;
-  }
-  .below_logos {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .below_logos a {
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-  }
-  .below_logos a:hover {
-    text-decoration: underline;
-  }
-  .list_1 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .list_2 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .list_3 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .footer_logos svg:hover {
-    cursor: pointer;
-  }
-  .footer_logos svg {
-    fill: white;
-  }
-  .footer_last_div {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .copyRightText {
-    color: rgb(175, 179, 188);
-    font-size: 12px;
-  }
-  /* -------------------------------------footer ends here-------------------------------------------- */
-  
-  /*-------------------------- calender css starts here -------------------------------------- */
-  
-  
-   .calen1{
-    display: none;
-    height: 25px;
-    border-radius: 5px;
-    width: 40%;
+}
+.functional_div {
+  width: 99%;
+  background-color: rgb(249, 250, 250);
+  margin: 30px auto;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+.typeOfHotel_buttons {
+  width: 74%;
+  margin: auto;
+}
+.typeOfHotel_buttons > button {
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  background: rgb(231, 244, 250);
+  border: none;
+}
+.complex_div {
+  background: white;
+  padding: 5px;
+  width: 73%;
+  margin: auto;
+  display: flex;
+  border-radius: 0 10px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+.part1 {
+  display: flex;
+  width: 100%;
+  flex: 4;
+  align-items: center;
+  padding: 0 5px;
+}
+.part1 input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
   border: none;
   outline: none;
-  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
-   }
-   .calen2{
-    display: none;
-    height: 25px;
-    border-radius: 5px;
-    width: 40%;
-    border: none;
-  outline: none;
-  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
-   }
-  
-  /* -------------------------------- calender css ends here ------------------------------------ */
-  
-  
-  @media only screen and (min-width:750px) and (max-width:1361px){
-  .nav_login{
+}
+.part1 button {
+  background: white;
+  border: none;
+  border-radius: 8px;
+}
+.part1 button:hover {
+  background: rgb(243, 244, 245);
+}
+
+.part2 {
+  display: flex;
+  flex: 4;
+}
+.part3 {
+  display: flex;
+  flex: 2;
+}
+.part4 {
+  display: flex;
+  flex: 2;
+}
+.part4_submit {
+  width: 95%;
+  margin: auto;
+  background: rgb(0, 124, 194);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 13px 5px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+.part4_submit:hover {
+  background: rgb(0, 95, 163);
+  cursor: pointer;
+}
+.imageOfCompanies {
+  width: 73%;
+  margin: auto;
+}
+.screenShotImg {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.screenShotImg img{
+  width: 100%;
+}
+.text_100 {
+  font-size: 14px;
+  color: rgb(175, 179, 188);
+}
+
+.part3 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.part3 p:nth-child(1) {
+  font-size: 12px;
+  font-weight: 700;
+}
+.part3 p:nth-child(2) {
+  font-size: 12px;
+  margin-top: -10px;
+}
+.resetBtn {
+  width: 25%;
+  height: 40px;
+  border-color: rgb(181, 183, 188);
+  background: white;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+}
+.resetBtn:hover {
+  background-color: rgb(108, 112, 122);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.applyBtn {
+  width: 25%;
+  height: 35px;
+  background: rgb(0, 124, 194);
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+.applyBtn:hover {
+  background: rgb(0, 95, 163);
+  cursor: pointer;
+}
+.guestInfoDiv p {
+  font-size: 14px;
+  font-weight: 700;
+}
+.guestInfoDiv p:nth-last-child(1) {
+  font-size: 14px;
+  font-weight: 100;
+}
+.guestInfoDiv {
   display: none;
-  }
+}
+.input_adults{
+    width: 20%;
+    border: 1px solid rgb(215,217,221);
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+}
+.input_childrens{
+    width: 20%;
+    border: 1px solid rgb(215,217,221);
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+
+}
+.input_rooms{
+    width: 20%;
+    border: 1px solid rgb(215,217,221);
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+
+}
+
+.inc_adults{
+    width: 18%;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 1px solid rgb(125,129,138);
+    background: white;
+}
+.inc_childrens{
+    width: 18%;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 1px solid rgb(125,129,138);
+    background: white;
+
+}
+.inc_rooms{
+    width: 18%;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 1px solid rgb(125,129,138);
+    background: white;
+
+}
+.dec_adults{
+    width: 18%;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 1px solid rgb(125,129,138);
+    background: white;
+
+}
+.dec_childrens{
+    width: 18%;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 1px solid rgb(125,129,138);
+    background: white;
+
+}
+.dec_rooms{
+    width: 18%;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 1px solid rgb(125,129,138);
+    background: white;
+
+}
+.mic{
+background: white;
+border-radius: 5px;
+padding: 5px;
+}
+.mic:hover{
+  background-color: rgb(242, 221, 221);
+}
+/* -----------------------functional div  ends here----------------------- */
+
+/* -----------------------recent_activity div starts here----------------------- */
+
+.recent_activity {
+  width: 73%;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.recent_activity > div:nth-child(1) > p {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.parentOfImage_activity {
+  display: flex;
+}
+.recent1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  line-height: 15px;
+}
+
+.parentOfAcitvities {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  width: 50%;
+}
+.recentDataA p {
+font-size: 12px;
+}
+.recentDataB p {
+font-size: 12px;
+}
+.vertical_img{
+  width: auto;
+  /* display: none; */
+}
+.recentDataA{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(249,250,250);
+  border-radius: 20px;
+}
+.recentDataA button{
+  height: 40px;
+  width: 130px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid black;
+}
+.recentDataB{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(249,250,250);
+  border-radius: 20px;
+}
+.recentDataB button{
+  height: 40px;
+  width: 130px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid black;
+}
+
+
+
+/* -----------------------recent_activity div ends here----------------------- */
+
+/* -----------------------top results starts here------------------------------- */
+.top_results {
+  width: 78%;
+  margin: auto;
+  margin-top: 100px;
+}
+.top_results > div:nth-child(1) > p {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, Sans-Serif;
+}
+.top_results > div:nth-child(2) {
+  width: 98%;
+  margin: auto;
+}
+.containerForTopCities {
   
+  font-size: 14px;
+  width: 100%;
+  display: flex;
+justify-content: space-around;
+  gap: 10px;
+ 
+}
+.containerForTopDestinations {
+  font-size: 14px;
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  position: absolute;
+  top: 156.5vh;
+  width: 77%;
+  display: none;
+  /* change the upper line for js  */
+}
+.titleOfEachHotel {
+  font-size: 16px;
+  font-weight: 700;
+}
+.containerForTopDestinations img {
+  width: 257px;
+  height: 220px;
+  border-radius: 15px;
+}
+.containerForTopCities img {
+  width: 257px;
+  height: 220px;
+  border-radius: 15px;
+}
+.containerForTopCities > div {
+  cursor: pointer;
+}
+.containerForTopDestinations > div {
+  cursor: pointer;
+}
+.containerForTopCities > div p {
+  padding: 0 8px;
+}
+.containerForTopDestinations > div p {
+  padding: 0 8px;
+}
+.top_city {
+  background-color: white;
+  border: none;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 10px;
+  color: rgb(108, 112, 122);
+}
+.top_city:hover {
+  background: rgb(243, 244, 245);
+  color: black;
+}
+.top_destination:hover {
+  background: rgb(243, 244, 245);
+  color: black;
+}
+.top_city:focus {
+  border-bottom: 2px solid rgb(82, 124, 194);
+  color: rgb(82, 124, 194);
+}
+.top_city:focus > .containerForTopDestinations {
+  display: none;
+}
+.top_destination:focus {
+  border-bottom: 2px solid rgb(82, 124, 194);
+  color: rgb(82, 124, 194);
+}
+.top_destination {
+  background-color: white;
+  border: none;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 10px;
+  color: rgb(108, 112, 122);
+}
+.topCityDestination_hr {
+  margin-top: 0px;
+  border: none;
+  border-bottom: 1px solid rgb(108, 112, 122);
+}
+
+/* -----------------------top results ends here------------------------------- */
+
+/* -------------------------info starts here----------------------------------- */
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 78%;
+  margin: auto;
+  margin-top: 70px;
+  font-size: 16px;
+  color: grey;
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-weight: 100;
+}
+.info > div > p:nth-child(1) {
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* -------------------------info ends here----------------------------------- */
+
+/* -------------------------more starts here----------------------------------- */
+.more {
+  width: 78%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.more_title1 {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.more_title2 {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.more a {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(104, 103, 103);
+}
+.more a:hover {
+  text-decoration: underline;
+}
+.more_body1 {
+  display: flex;
+  gap: 40px;
+  overflow-y: scroll;
+  height: 95px;
+  padding: 10px;
+  width: 100%;
+}
+.more_body2 {
+  display: flex;
+  gap: 40px;
+  overflow-y: scroll;
+  height: 95px;
+  padding: 10px;
+  width: 100%;
+}
+
+.more_common {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* -------------------------more ends here----------------------------------- */
+
+/* ---------------------------------------footer starts here--------------------------------------- */
+
+
+footer hr {
+  width: 100%;
+  margin: auto;
+  border-color: rgb(108, 112, 122);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+footer {
+  font-family: Arial, Helvetica, Sans-Serif;
+  padding: 30px 40px;
+  width: 100%;
+  background: rgb(10, 17, 33);
+  color: white;
+  margin-top: 70px;
+}
+.parent_footer {
+  width: 85%;
+  margin: auto;
+}
+
+.above_hr {
+  display: flex;
+  justify-content: space-between;
+}
+.above_hr p {
+  font-size: 14px;
+}
+.mail_info {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.mail_info input {
+  height: 30px;
+  width: 79%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  padding: 5px;
+}
+.mail_info button {
+  background: rgb(108, 112, 122);
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 10px 10px;
+}
+.mail_info button:hover {
+  cursor: pointer;
+  background: rgb(175, 179, 188);
+}
+.below_hr p {
+  font-size: 14px;
+}
+.footer_logos {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+.below_hr {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.country_parent {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.country_parent > div {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#country {
+  width: 100%;
+  background: rgb(10, 17, 33);
+  color: white;
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+#country:focus {
+  border: none;
+}
+.below_logos {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.below_logos a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+.below_logos a:hover {
+  text-decoration: underline;
+}
+.list_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.list_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.list_3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer_logos svg:hover {
+  cursor: pointer;
+}
+.footer_logos svg {
+  fill: white;
+}
+.footer_last_div {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.copyRightText {
+  color: rgb(175, 179, 188);
+  font-size: 12px;
+}
+/* -------------------------------------footer ends here-------------------------------------------- */
+
+/*-------------------------- calender css starts here -------------------------------------- */
+
+
+ .calen1{
+  display: none;
+  height: 25px;
+  border-radius: 5px;
+  width: 40%;
+border: none;
+outline: none;
+/* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+ }
+ .calen2{
+  display: none;
+  height: 25px;
+  border-radius: 5px;
+  width: 40%;
+  border: none;
+outline: none;
+/* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+ }
+
+/* -------------------------------- calender css ends here ------------------------------------ */
+
+
+@media only screen and (min-width:750px) and (max-width:1361px){
+.nav_login{
+display: none;
+}
+
+.containerForTopCities{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3,1fr);
+}
+.checkOutTextDiv p{
+  display: none;
+}
+.checkInTextDIv p{
+  display: none;
+}
+#subscribe{
+  width: 100px;
+  height: 40px;
+}
+nav{
+  width: 100%;
+}
+.functional_div{
+  width: 100%;
+}
+
+  }
+@media only screen and (min-width:690px) and (max-width:750px){
+  .nav_login{
+display: none;
+}
+.nav_currency{
+display: none;
+}
   .containerForTopCities{
     display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .containerForTopCities img{
     width: 100%;
-    grid-template-columns: repeat(3,1fr);
+  }
+  .welcome_div{
+    display: none;
+  }
+  .recent_activity{
+    display: none;
+  }
+  #subscribe{
+    width: 100px;
+    height: 40px;
+    margin: 0 10px;
   }
   .checkOutTextDiv p{
     display: none;
@@ -844,28 +887,93 @@ body {
   .checkInTextDIv p{
     display: none;
   }
-  #subscribe{
+  .myFav{
     width: 100px;
-    height: 40px;
-  }
-  nav{
-    width: 100%;
-  }
-  .functional_div{
-    width: 100%;
-  }
-  
     }
-  @media only screen and (min-width:690px) and (max-width:750px){
     .nav_login{
-  display: none;
+    display: none;
+    }
+    body{
+      padding-left: 50px;
+    }
+    .imageOfCompanies{
+      display: none;
+    }
+    .more{
+      display: flex;
+      flex-direction: column;
+    }
+    .mail_info{
+      display: flex;
+    }
   }
-  .nav_currency{
-  display: none;
-  }
+
+
+  @media only screen and (min-width:0px) and (max-width:690px){
+    .myFav_text{
+      display: none;
+    }
+    .nav_currency:hover .currency_options {
+  display: block;
+  position: absolute;
+  background: white;
+  top: 62px;
+  left: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 2;
+  border-radius: 10px;
+  width: 40%;
+  padding-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+    .nav_menu:hover .menu_options {
+  display: block;
+  position: absolute;
+  background: white;
+  top: 62px;
+  left: 43%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 2;
+  border-radius: 10px;
+  width: 41%;
+  padding-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+    .nav_login{
+display: none;
+}
+nav{
+  margin-left: -30px;
+  display: flex;
+  justify-content: center;
+}
+    .complex_div{
+      display: flex;
+      flex-wrap: wrap;
+    }
+       .mail_info{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+.more{
+  padding-left:  50px;
+}
+    .info_guests_rooms{
+      display: none;
+    }
     .containerForTopCities{
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(1,1fr);
     }
     .containerForTopCities img{
       width: 100%;
@@ -877,130 +985,22 @@ body {
       display: none;
     }
     #subscribe{
-      width: 100px;
-      height: 40px;
-      margin: 0 10px;
+/* display: none; */
+width: 90%;
+height: 45px;
     }
+
     .checkOutTextDiv p{
       display: none;
     }
     .checkInTextDIv p{
       display: none;
     }
-    .myFav{
-      width: 100px;
-      }
-      .nav_login{
+        .imageOfCompanies{
       display: none;
-      }
-      body{
-        padding-left: 50px;
-      }
-      .imageOfCompanies{
-        display: none;
-      }
-      .more{
-        display: flex;
-        flex-direction: column;
-      }
-      .mail_info{
-        display: flex;
-      }
     }
-  
-  
-    @media only screen and (min-width:0px) and (max-width:690px){
-      .myFav_text{
-        display: none;
-      }
-      .nav_currency:hover .currency_options {
-    display: block;
-    position: absolute;
-    background: white;
-    top: 62px;
-    left: 48%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    z-index: 2;
-    border-radius: 10px;
-    width: 40%;
-    padding-left: 20px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-      rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  }
-      .nav_menu:hover .menu_options {
-    display: block;
-    position: absolute;
-    background: white;
-    top: 62px;
-    left: 43%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    z-index: 2;
-    border-radius: 10px;
-    width: 41%;
-    padding-left: 20px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-      rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  }
-  
-  
-      .nav_login{
-  display: none;
-  }
-  nav{
-    margin-left: -30px;
-    display: flex;
-    justify-content: center;
-  }
-      .complex_div{
-        display: flex;
-        flex-wrap: wrap;
-      }
-         .mail_info{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-  
-  .more{
-    padding-left:  50px;
-  }
-      .info_guests_rooms{
-        display: none;
-      }
-      .containerForTopCities{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-      }
-      .containerForTopCities img{
-        width: 100%;
-      }
-      .welcome_div{
-        display: none;
-      }
-      .recent_activity{
-        display: none;
-      }
-      #subscribe{
-  /* display: none; */
-  width: 90%;
-  height: 45px;
-      }
-  
-      .checkOutTextDiv p{
-        display: none;
-      }
-      .checkInTextDIv p{
-        display: none;
-      }
-          .imageOfCompanies{
-        display: none;
-      }
-          .more{
-        display: flex;
-        flex-direction: column;
-      }
+        .more{
+      display: flex;
+      flex-direction: column;
     }
+  }
