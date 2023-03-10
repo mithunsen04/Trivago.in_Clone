@@ -75,7 +75,7 @@ function setData(data) {
   let discountVal = (actual * 5) / 100;
 
   let totalVal = actual - discountVal + 100;
-
+  localStorage.setItem("totalval", totalVal);
   console.log(totalVal);
 
   //pushing data
