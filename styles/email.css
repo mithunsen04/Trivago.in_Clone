@@ -1,0 +1,62 @@
+* {
+    font-family: "Proxima Vara", Arial, Arial, Helvetica, sans-serif;
+  }
+  #container {
+    margin-bottom: 150px;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo {
+    display: flex;
+    /* border: 1px solid red; */
+    /* height: 100px; */
+    width: 100%;
+    margin: auto;
+  }
+   #main {
+    /* border: 1px solid black; */
+    /* height: 500px; */
+    width: 355px;
+    margin: auto;
+    margin-left: 37%;
+  }
+  h1 {
+    font-size: 31px;
+    margin-top: 10px;
+    font-weight:750;
+    font-stretch: expanded;
+  }
+  #main p:nth-child(3){
+    margin-top: 100px;
+  }
+  #main p:nth-child(3)>span{
+    color: blue;
+  }
+  #logo img {
+    height: 34px;
+    width: 110px;
+    padding: 20px 37%;
+    margin-top: 30px;
+  }
+ .back{
+    margin-left: 37%;
+    border: none;
+    font-size: larger;
+    font-weight: bold;
+    background: none;
+    margin-top: 40px;
+    margin-bottom: 0px;
+ }
+ .back a{
+    text-decoration: none;
+    color: rgb(52, 49, 49);
+    
+ }
+   
+ .resending {
+    cursor: pointer;
+    color: blue;
+  }
+  
+  
+  

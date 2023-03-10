@@ -1,0 +1,65 @@
+* {
+    font-family: "Proxima Vara", Arial, Arial, Helvetica, sans-serif;
+  }
+  #container {
+    margin-bottom: 150px;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo {
+    display: flex;
+    /* border: 1px solid red; */
+    /* height: 100px; */
+    width: 100%;
+    margin: auto;
+  }
+  #main {
+    /* border: 1px solid black; */
+    /* height: 500px; */
+    width: 355px;
+    margin: auto;
+    margin-left: 37%;
+  }
+  h1 {
+    font-size: 31px;
+    margin-top: 10px;
+    font-weight:750;
+    font-stretch: expanded;
+  }
+  #logo img {
+    height: 34px;
+    width: 110px;
+    padding: 20px 37%;
+    margin-top: 30px;
+  }
+  label {
+    display: block;
+    height: 18px;
+    font-size: 0.875rem;
+    line-height: 18px;
+    font-weight: 700;
+  }
+  .pw {
+    height: 48px;
+    width: 355px;
+    border-radius: 8px;
+    margin-top: 12px;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-color: rgb(133, 128, 128);
+  }
+  button {
+    display: block;
+    height: 49px;
+    width: 363px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: #007cc2;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    border: 1px solid #afb3bc;
+  }
+  #main p > span {
+    color: blue;
+  }

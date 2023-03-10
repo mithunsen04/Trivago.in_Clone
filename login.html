@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login or create an account - Trivago</title>
+    <link rel="stylesheet" href="styles/login.css"/>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeXTVDu67JZDJNNRO9MhA7OBpUHYgEC54aw&usqp=CAU">
+  </head>
+  <body>
+    <div id="container">
+      <div id="logo">
+        <img
+          src="https://auth.trivago.com/_static/icons/logo.svg"
+          alt="trivago logo"
+        />
+      </div>
+      <div id="main">
+        <h1>
+          Log in or create an <br />
+          account
+        </h1>
+
+        <!-- form for login email -->
+
+        <form id="loginForm"  onsubmit="handleLogin(event)">    
+          <label
+            data-testid="email-input-label"
+            for="email"
+            class="BaseInput_label__SGD71"
+            >Your email address</label
+          >
+
+          <input
+            class="mail"
+            id="email"
+            type="email"
+            name="email"
+            aria-invalid="false"
+            autocomplete="username"
+            autocapitalize="none"
+            spellcheck="false"
+          />
+         
+          <button type="submit" id="goNext" onclick="submitdata()">Next</button>
+        </form>
+
+        <div class="or">OR</div>
+      </div>
+
+      <div id="directLogin">
+            <div class="Google">
+                <img src="https://auth.trivago.com/_static/icons/google.svg" alt="google logo">
+                <p>Continue with Google</p>
+            </div>
+
+            <div class="Ios">
+                <img src="https://auth.trivago.com/_static/icons/apple.svg" alt="apple logo">
+                <p>Continue with Apple</p>
+            </div>
+
+            <div class="Fb">
+                <img src="https://auth.trivago.com/_static/icons/facebook.svg" alt="fb logo">
+                <P>Continue with Facebook</P> 
+            </div>
+            <p>By creating an account, you agree to our <span>Privacy</span> <br>
+                 <span>policy</span> and <span>Terms of use</span>.</p>
+      </div>
+      
+
+    </div>
+  </body>
+</html>
+
+<script src="scripts/login.js"></script>
+
+
