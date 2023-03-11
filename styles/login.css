@@ -124,3 +124,9 @@ button {
   text-align: center;
   display: block;
 }
+@media screen and (max-width:1199px) {
+      
+}
+
+/* @media screen and (max-width:740px) {
+    } */
