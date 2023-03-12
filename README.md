@@ -18,3 +18,41 @@ Contributors:-
 
 ## Deployed Link
 
+Login page
+C:\Users\ALI\Desktop\TRIVAGO\Trivago.in_Clone\images\login.png
+
+create password
+C:\Users\ALI\Desktop\TRIVAGO\Trivago.in_Clone\images\create.png
+
+forget password
+C:\Users\ALI\Desktop\TRIVAGO\Trivago.in_Clone\images\forget.png
+
+reset password
+C:\Users\ALI\Desktop\TRIVAGO\Trivago.in_Clone\images\reset.png
+
+home page
+C:\Users\ALI\Desktop\TRIVAGO\Trivago.in_Clone\images\Homepage.png
+
+destinations
+C:\Users\ALI\Desktop\TRIVAGO\Trivago.in_Clone\images\destinations.png
+
+booking page
+C:\Users\ALI\Desktop\TRIVAGO\Trivago.in_Clone\images\booking.png
+
+search option
+C:\Users\ALI\Desktop\TRIVAGO\Trivago.in_Clone\images\search.png
+
+booking OTP
+C:\Users\ALI\Desktop\TRIVAGO\Trivago.in_Clone\images\OTPbooking.png
+
+booking done
+C:\Users\ALI\Desktop\TRIVAGO\Trivago.in_Clone\images\pay.png
+
+payment page
+C:\Users\ALI\Desktop\TRIVAGO\Trivago.in_Clone\images\payment.png
+
+Payment OTP
+C:\Users\ALI\Desktop\TRIVAGO\Trivago.in_Clone\images\payOTP.png
+
+payment succsesfull
+C:\Users\ALI\Desktop\TRIVAGO\Trivago.in_Clone\images\final.png

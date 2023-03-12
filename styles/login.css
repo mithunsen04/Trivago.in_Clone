@@ -49,7 +49,7 @@ label {
   border-color: rgb(133, 128, 128);
 }
 button {
-  display: block;
+  /* display: block; */
   height: 49px;
   width: 363px;
   border-radius: 8px;
